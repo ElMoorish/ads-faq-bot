@@ -1,0 +1,418 @@
+# Meta Ads Official Documentation
+## Facebook & Instagram Advertising Guide
+
+---
+
+# Getting Started with Meta Ads
+
+## Why Advertise on Meta?
+
+Meta (Facebook & Instagram) reaches over 3.9 billion people across its family of apps.
+
+**Key Benefits:**
+- **Massive Reach** - 3.9+ billion users across Facebook, Instagram, Messenger, WhatsApp
+- **Precise Targeting** - Demographics, interests, behaviors, custom audiences
+- **Multiple Ad Formats** - Images, videos, carousels, collections, stories, reels
+- **Objective-based Campaigns** - Awareness, Consideration, Conversion
+- **Advanced Analytics** - Comprehensive reporting and insights
+- **Cross-platform** - Advertise across all Meta properties
+
+---
+
+# Campaign Objectives
+
+## AWARENESS Objectives
+
+### 1. Brand Awareness
+- **Goal:** Increase brand recognition
+- **Best for:** New brands, product launches, market expansion
+- **Optimization:** Estimated ad recall lift
+
+### 2. Reach
+- **Goal:** Maximum number of people
+- **Best for:** Broad awareness, frequency control
+- **Optimization:** Impressions, reach
+
+## CONSIDERATION Objectives
+
+### 3. Traffic
+- **Goal:** Drive people to website/app
+- **Best for:** Blog posts, landing pages, app stores
+- **Optimization:** Link clicks, landing page views
+
+### 4. Engagement
+- **Goal:** Get more interactions on posts
+- **Best for:** Boosting posts, page likes, event responses
+- **Optimization:** Post engagement, page likes
+
+### 5. App Installs
+- **Goal:** Drive app downloads
+- **Best for:** Mobile app promotion
+- **Optimization:** App installs, app events
+
+### 6. Video Views
+- **Goal:** Maximize video views
+- **Best for:** Brand storytelling, tutorials, demos
+- **Optimization:** 10-second views, 15-second views, ThruPlay
+
+### 7. Lead Generation
+- **Goal:** Collect lead information
+- **Best for:** B2B, real estate, coaching, services
+- **Optimization:** Leads, lead quality
+
+### 8. Messages
+- **Goal:** Start conversations
+- **Best for:** Customer service, sales, consultations
+- **Optimization:** Messages started, conversations
+
+## CONVERSION Objectives
+
+### 9. Conversions
+- **Goal:** Drive specific actions on website
+- **Best for:** Purchases, sign-ups, form submissions
+- **Optimization:** Conversion events (purchase, add to cart, etc.)
+
+### 10. Catalog Sales
+- **Goal:** Show products from catalog
+- **Best for:** E-commerce with many products
+- **Optimization:** Conversions, ROAS
+
+### 11. Store Traffic
+- **Goal:** Drive visits to physical stores
+- **Best for:** Local businesses, retail
+- **Optimization:** Store visits
+
+---
+
+# Campaign Structure
+
+Meta Ads uses a 3-level hierarchy:
+
+## Level 1: Campaign
+- Sets objective and budget
+- Contains multiple ad sets
+
+## Level 2: Ad Set
+- Defines audience, placement, schedule
+- Contains multiple ads
+
+## Level 3: Ad
+- The actual creative (image, video, text)
+- What users see
+
+---
+
+# Budget Strategies
+
+## Daily Budget
+- Consistent spending each day
+- Paced throughout the day
+- Best for ongoing campaigns
+
+## Lifetime Budget
+- Total spend over campaign duration
+- Flexible daily spending
+- Best for time-limited campaigns
+
+## Advantage+ Campaign Budget (Formerly CBO)
+- Set budget at campaign level
+- Meta distributes across ad sets
+- Automatically optimizes for best performers
+
+---
+
+# Bidding Strategies
+
+## Cost Cap
+- Set average cost you want to maintain
+- Flexible for performance fluctuations
+- Best for scaling campaigns
+
+## Bid Cap
+- Maximum you'll pay per result
+- More control but may limit delivery
+- Best for strict budget control
+
+## Advantage+ Shopping Campaigns
+- AI-optimized bidding
+- Best for e-commerce
+- Requires product catalog
+
+---
+
+# Targeting Options
+
+## Core Audiences
+
+### Demographics
+- Age, gender, language
+- Education, relationship status
+- Life events
+- Job title, industry
+
+### Interests
+- Hobbies, activities
+- Pages liked
+- Topics engaged with
+
+### Behaviors
+- Purchase behavior
+- Device usage
+- Travel preferences
+- Digital activities
+
+## Custom Audiences
+
+### Customer List
+- Upload email/phone list
+- Match with Meta users
+- Target existing customers
+
+### Website Traffic
+- Pixel-based audiences
+- Specific page visitors
+- Time-based windows (1-180 days)
+
+### App Activity
+- User actions in your app
+- High-value users
+- Churned users
+
+### Engagement
+- Video viewers
+- Page engagers
+- Instagram profile visitors
+- Event responders
+
+## Lookalike Audiences
+
+### How It Works:
+1. Choose source audience (1k-50k people)
+2. Select similarity percentage (1-10%)
+3. Meta finds similar users
+
+### Best Practices:
+- 1% lookalike = highest similarity
+- 5-10% = broader reach, lower similarity
+- Test multiple lookalike sizes
+
+---
+
+# Placements
+
+## Facebook Placements
+- Feed
+- Stories
+- Reels
+- Right Column
+- Marketplace
+- Video Feeds
+- Search Results
+
+## Instagram Placements
+- Feed
+- Stories
+- Reels
+- Explore
+- Shop
+
+## Other Placements
+- Messenger Inbox
+- Messenger Stories
+- WhatsApp
+
+## Advantage+ Placements
+- Let Meta choose best placements
+- Typically better results
+- Recommended approach
+
+---
+
+# Ad Formats
+
+## Image Ads
+- Single image
+- Multiple aspect ratios
+- Up to 30 characters headline, 125 characters primary text
+
+## Video Ads
+- Single video
+- Multiple lengths (up to 240 minutes, but 15-30s recommended)
+- Captions recommended (85% watch without sound)
+
+## Carousel Ads
+- 2-10 images/videos
+- Each card can link to different URL
+- Great for product showcasing
+
+## Collection Ads
+- Cover image/video + product grid
+- Mobile-optimized
+- Instant Experience loading
+
+## Stories/Reels Ads
+- Full-screen vertical format
+- 9:16 aspect ratio
+- Interactive elements available
+
+---
+
+# Creative Best Practices
+
+## General Guidelines
+
+### Hook in First 3 Seconds
+- Capture attention immediately
+- Use movement, faces, text overlays
+- Address pain points quickly
+
+### Mobile-First Design
+- Vertical format (9:16 or 4:5)
+- Large, readable text
+- Minimal small details
+
+### Clear Value Proposition
+- What's in it for the viewer?
+- Benefit-focused messaging
+- Clear CTA
+
+### Social Proof
+- Testimonials
+- Reviews
+- User-generated content
+
+## Platform-Specific Tips
+
+### Facebook Feed
+- Use 4:5 aspect ratio
+- Keep text concise
+- Test carousel vs. single image
+
+### Instagram Feed
+- Use 4:5 or 1:1 aspect ratio
+- High-quality visuals essential
+- Lifestyle imagery performs well
+
+### Instagram Stories/Reels
+- Use full 9:16 vertical
+- Add interactive stickers (polls, quizzes)
+- Use native features for authenticity
+
+---
+
+# Meta Pixel
+
+## What It Does
+- Tracks website actions
+- Enables conversion tracking
+- Powers retargeting
+- Improves ad delivery
+
+## Key Events to Track
+- Page View
+- View Content
+- Add to Cart
+- Initiate Checkout
+- Purchase
+- Lead
+- Complete Registration
+
+## Conversions API
+- Server-side tracking
+- More reliable than pixel alone
+- Essential after iOS 14.5+
+- Recommended for all advertisers
+
+---
+
+# Measurement & Analytics
+
+## Key Metrics
+
+### Awareness Metrics
+- Impressions
+- Reach
+- Frequency
+- Estimated Ad Recall
+
+### Engagement Metrics
+- Click-through Rate (CTR)
+- Cost Per Click (CPC)
+- Engagement Rate
+- Video View Rate
+
+### Conversion Metrics
+- Conversions
+- Cost Per Result
+- Return on Ad Spend (ROAS)
+- Attribution
+
+## Reporting Tools
+- Ads Manager Reports
+- Custom Reports
+- Attribution Settings
+- Facebook Analytics
+
+---
+
+# Best Practices by Objective
+
+## Brand Awareness
+- Use broad targeting
+- Focus on reach and frequency
+- Use video and motion
+- Test multiple creatives
+
+## Traffic
+- Optimize for landing page views
+- Use clear CTAs
+- Ensure fast-loading pages
+- Test image vs. video
+
+## Lead Generation
+- Keep forms short
+- Offer clear value
+- Use Instant Forms or website forms
+- Follow up quickly
+
+## Conversions
+- Install pixel and CAPI
+- Use value-based bidding
+- Create multiple audiences
+- Test advantage+ shopping
+
+---
+
+# Troubleshooting Common Issues
+
+## Low Delivery
+- Broaden targeting
+- Increase budget
+- Check ad quality ranking
+- Review creative
+
+## High CPC/CPM
+- Improve relevance score
+- Test new creatives
+- Refine audience
+- Check competition
+
+## Low Conversions
+- Verify pixel tracking
+- Optimize landing page
+- Test different CTAs
+- Review audience targeting
+
+---
+
+# Official Resources
+
+- Meta Business Suite: https://business.facebook.com
+- Ads Manager: https://adsmanager.facebook.com
+- Business Help Center: https://www.facebook.com/business/help
+- Meta Blueprint: https://www.facebookblueprint.com
+- Creative Hub: https://www.facebook.com/ads/creativehub
+
+---
+
+*Documentation compiled from Meta for Business official sources*

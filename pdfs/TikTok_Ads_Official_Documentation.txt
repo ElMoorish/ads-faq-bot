@@ -1,0 +1,221 @@
+# TikTok Ads Official Documentation
+## Compiled Guide for AI Knowledge Base
+
+---
+
+# Getting Started with TikTok Ads Manager
+
+## Why Advertise on TikTok?
+
+TikTok has been one of the world's most downloaded apps, with over a billion people worldwide using it to be entertained, inspired, educated, and shop.
+
+**Key Benefits:**
+- **Worldwide Reach** - Over 1 billion users globally
+- **Effective Engagement** - Fun, imaginative format inspires participation
+- **Creative Ad Formats** - Templates and tools for creating engaging ads
+- **Powerful Campaign Management** - Create, launch, and measure with ease
+- **Outcome-based Objectives** - Awareness, Consideration, Conversion goals
+- **Precise Targeting** - Gender, location, age, interests, behaviors
+- **Holistic Measurement** - Detailed dashboards and customized reports
+
+---
+
+# Creating Your TikTok Ads Manager Account
+
+## Step 1: Sign Up
+1. Go to TikTok Ads Manager signup page: https://ads.tiktok.com/i18n/signup
+2. Fill in email address or phone number and password
+3. Provide business information:
+   - Country/region
+   - Time zone (cannot be changed later!)
+   - Preferred currency for billing
+   - Legal business name
+   - Industry
+
+## Step 2: Choose Campaign Objective
+
+Your campaign objective guides what action you want viewers to take.
+
+### Three Objective Categories:
+
+**AWARENESS**
+- Reach - Maximum exposure to broad audience
+- Brand Awareness - Increase brand recognition
+
+**CONSIDERATION**
+- Traffic - Drive people to website/app
+- App Installs - Promote app downloads
+- Video Views - Maximize video views
+- Lead Generation - Collect lead information
+- Community Interaction - Increase profile visits
+
+**CONVERSION**
+- Conversions - Drive specific actions on website
+- Product Sales - Promote products
+- Shop Purchases - Drive TikTok Shop sales
+
+---
+
+# Targeting Options
+
+## Targeting Variables:
+- **Location** - Countries, regions, cities
+- **Demographics** - Age, gender, language
+- **Interests** - Categories and topics
+- **Behaviors** - Purchase behavior, device usage
+- **Device** - iOS, Android, specific devices
+
+## Best Practice: Broad Targeting
+For most advertisers, broad targeting is recommended as a starting point. Automatic targeting is integrated into all broad ads, making it highly effective.
+
+Even sophisticated advertisers should test to ensure advanced techniques outperform broad targeting.
+
+---
+
+# Bidding Methods
+
+TikTok offers four bidding methods:
+
+## 1. CPM (Cost Per Mille/Thousand Impressions)
+- **What it is:** Price you pay for 1,000 impressions
+- **When to use:** Brand awareness, reach campaigns
+- **Billing:** Charged by impression
+- **Objectives:** Reach
+
+## 2. oCPM (Optimized CPM)
+- **What it is:** Pay for 1,000 impressions targeting people likely to take action
+- **When to use:** Conversions, app installs, lead generation
+- **Billing:** Charged by impression
+- **Objectives:** Shop purchases, Product sales, Conversions, App install, Lead generation, Community interaction
+
+## 3. CPV (Cost Per View)
+- **What it is:** Pay when someone:
+  - Views ad for at least 6 seconds
+  - Interacts with ad within first 6 seconds
+- **When to use:** Video views campaigns
+- **Billing:** Charged per focused view
+- **Objectives:** Video views
+
+## 4. CPC (Cost Per Click)
+- **What it is:** Price per click
+- **When to use:** Traffic, conversions, app installs
+- **Billing:** Charged per click
+- **Objectives:** Shop purchases, Product sales, Traffic, Conversions, App install, Community interaction
+
+---
+
+# Budget Types
+
+## Daily Budget
+- Specific amount spent per day
+- Can be changed anytime
+- System paces spending throughout the day
+
+## Lifetime Budget
+- Total amount for campaign duration
+- System automatically paces spending
+- Flexible for uneven spending patterns
+
+---
+
+# Ad Placements
+
+Your ads can appear in four places:
+
+1. **In-Feed Ads** - Main feed where users scroll
+2. **Detail Page** - When viewing specific content
+3. **Post-Roll** - After video content
+4. **Story** - Full-screen vertical format
+
+**Tip:** TikTok only supports video ads on its platform.
+
+---
+
+# Creative Tools
+
+## Video Creation Kit
+- Templates for creating video ads
+- Easy-to-use editing tools
+- No professional editing required
+
+## Automated Creative Optimization
+- Automatically creates multiple ad variations
+- Tests different combinations
+- Optimizes for best performers
+
+## Linking TikTok Account
+- Connect your owned/authorized TikTok account
+- Run ads on live posts
+- Boost organic content
+
+---
+
+# Campaign Performance & Reporting
+
+## Dashboard Features:
+- Real-time campaign metrics
+- Custom reports
+- Audience insights
+- Conversion tracking
+- ROI measurement
+
+## Key Metrics to Monitor:
+- Impressions
+- Click-through rate (CTR)
+- Cost per click (CPC)
+- Cost per mille (CPM)
+- Conversions
+- Return on ad spend (ROAS)
+
+---
+
+# TikTok Ad Specifications
+
+## Video Ads
+- **Aspect Ratio:** 9:16, 1:1, 16:9
+- **Resolution:** 720x1280 or higher
+- **Length:** 5-60 seconds (15-30s recommended)
+- **Format:** MP4, MOV
+- **File Size:** Up to 500MB
+
+## Image Ads
+- **Aspect Ratio:** 1:1 recommended
+- **Resolution:** 1080x1080 minimum
+- **Format:** JPG, PNG
+- **File Size:** Up to 50MB
+
+---
+
+# Best Practices
+
+## Creative Best Practices:
+1. **Hook in first 3 seconds** - Capture attention immediately
+2. **Native feel** - Ads should feel like organic TikTok content
+3. **Vertical format** - Use 9:16 for full-screen impact
+4. **Sound on** - Use trending sounds and music
+5. **Clear CTA** - Tell viewers what to do next
+
+## Targeting Best Practices:
+1. Start with broad targeting
+2. Test advanced targeting vs. broad
+3. Use lookalike audiences after pixel data collected
+4. Exclude irrelevant audiences
+
+## Budget Best Practices:
+1. Start with daily budget for control
+2. Allow 2-3 days for algorithm learning
+3. Don't change budget more than 20% at once
+4. Scale winners, cut losers quickly
+
+---
+
+# Official Resources
+
+- TikTok Ads Manager: https://ads.tiktok.com
+- Help Center: https://ads.tiktok.com/help
+- Business Blog: https://www.tiktok.com/business/en-US/blog
+- Creative Center: https://ads.tiktok.com/creativecenter
+
+---
+
+*Documentation compiled from TikTok for Business official sources*
