@@ -7,3 +7,7 @@ langchain-huggingface>=0.0.3
 pypdf>=3.0.0
 chromadb>=0.4.0
 sentence-transformers>=2.2.0
+
+# Explicitly use HuggingFace embeddings (no OpenAI)
+# These prevent OpenAI from being auto-installed
+ InstructorEmbedding

@@ -1,6 +1,11 @@
 # FAQ Chatbot - Zero Cost
 # Uses: Groq (free LLM), HuggingFace (free embeddings), ChromaDB (local vector store)
 
+import os
+# Disable OpenAI completely - we use Groq + HuggingFace
+os.environ["OPENAI_API_KEY"] = ""
+os.environ.pop("OPENAI_API_KEY", None)
+
 import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -9,7 +14,6 @@ from langchain_community.vectorstores import Chroma
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
-import os
 from pathlib import Path
 import tempfile
 
