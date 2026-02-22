@@ -13,7 +13,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import SupabaseVectorStore
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from pathlib import Path
 import tempfile
 import supabase
