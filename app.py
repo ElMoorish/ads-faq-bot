@@ -66,12 +66,19 @@ class SupabaseHTTP:
         }
     
     def list_files(self, bucket: str):
-        resp = httpx.post(
-            f"{self.url}/storage/v1/object/list/{bucket}",
-            headers={**self.headers, "Content-Type": "application/json"},
-            json={}
-        )
-        return resp.json() if resp.status_code == 200 else []
+        try:
+            resp = httpx.post(
+                f"{self.url}/storage/v1/object/list/{bucket}",
+                headers={**self.headers, "Content-Type": "application/json"},
+                json={}
+            )
+            if resp.status_code != 200:
+                st.warning(f"Storage API returned {resp.status_code}: {resp.text}")
+                return []
+            return resp.json()
+        except Exception as e:
+            st.warning(f"Error listing files: {e}")
+            return []
     
     def download_file(self, bucket: str, path: str):
         resp = httpx.get(
@@ -140,6 +147,10 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     with st.spinner("Loading documents from storage..."):
         try:
             files = sb_http.list_files("pdfs")
+            st.write(f"Debug: Found {len(files)} files in bucket")
+            if files:
+                st.write(f"Debug: Files = {files}")
+            
             documents = []
             
             for file in files:
