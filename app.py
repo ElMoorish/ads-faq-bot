@@ -1,5 +1,5 @@
-# FAQ Chatbot - Zero Cost
-# Uses: Groq (free LLM), HuggingFace (free embeddings), ChromaDB (local vector store)
+# FAQ Chatbot - Production (Supabase)
+# Uses: Groq (free LLM), HuggingFace (free embeddings), Supabase pgvector
 
 import os
 # Disable OpenAI completely - we use Groq + HuggingFace
@@ -10,12 +10,14 @@ import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import SupabaseVectorStore
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from pathlib import Path
 import tempfile
+import supabase
+from io import BytesIO
 
 # Page config
 st.set_page_config(
@@ -66,32 +68,20 @@ with st.sidebar:
     st.title("📚 Ads Mastery FAQ")
     st.markdown("---")
     
-    # API Key input (check secrets first)
-    default_key = st.secrets.get("GROQ_API_KEY", os.environ.get("GROQ_API_KEY", ""))
-    groq_key = st.text_input(
-        "Groq API Key (Free)", 
-        value=default_key,
-        type="password",
-        help="Get free key at groq.com"
-    )
+    # Get secrets
+    groq_key = st.secrets.get("GROQ_API_KEY", os.environ.get("GROQ_API_KEY", ""))
+    supabase_url = st.secrets.get("SUPABASE_URL", "")
+    supabase_key = st.secrets.get("SUPABASE_SERVICE_KEY", "")
     
     if not groq_key:
-        st.info("👆 Enter your free Groq API key to start")
-        st.markdown("""
-        ### Get Free API Key:
-        1. Go to [groq.com](https://groq.com)
-        2. Sign in with Google
-        3. Copy your API key
-        4. Paste above
-        """)
-        st.markdown("---")
-        st.markdown("### 📖 Source Documents")
-        st.markdown("""
-        - Mastering Meta Ads 2026
-        - Mastering TikTok Ads 2026
-        - Ad Profits Unlocked
-        - Monetizing Strategies
-        """)
+        st.error("❌ GROQ_API_KEY not found in secrets")
+    if not supabase_url:
+        st.error("❌ SUPABASE_URL not found in secrets")
+    if not supabase_key:
+        st.error("❌ SUPABASE_SERVICE_KEY not found in secrets")
+    
+    if groq_key and supabase_url and supabase_key:
+        st.success("✅ All credentials configured")
     
     st.markdown("---")
     st.markdown("### 💡 Sample Questions")
@@ -121,58 +111,18 @@ st.markdown("Ask questions about Meta & TikTok ads based on our expert guides")
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
-if "vectorstore" not in st.session_state:
-    st.session_state.vectorstore = None
 if "qa_chain" not in st.session_state:
     st.session_state.qa_chain = None
 if "initialized" not in st.session_state:
     st.session_state.initialized = False
 
-# Load and process documents
-@st.cache_resource
-def load_documents(pdf_dir: str):
-    """Load PDFs and TXTs from directory"""
-    documents = []
-    
-    for file in Path(pdf_dir).glob("*.pdf"):
-        try:
-            loader = PyPDFLoader(str(file))
-            documents.extend(loader.load())
-        except Exception as e:
-            st.warning(f"Could not load {file.name}: {e}")
-    
-    for file in Path(pdf_dir).glob("*.txt"):
-        try:
-            loader = TextLoader(str(file))
-            documents.extend(loader.load())
-        except Exception as e:
-            st.warning(f"Could not load {file.name}: {e}")
-    
-    return documents
-
-@st.cache_resource
-def create_vectorstore(documents, _embeddings, persist_dir: str):
-    """Create vector store from documents"""
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200
-    )
-    splits = text_splitter.split_documents(documents)
-    
-    vectorstore = Chroma.from_documents(
-        documents=splits,
-        embedding=_embeddings,
-        persist_directory=persist_dir
-    )
-    return vectorstore
-
 # Initialize the system
-def initialize_system(groq_key: str):
-    """Initialize embeddings, vectorstore, and QA chain"""
+def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
+    """Initialize Supabase connection, embeddings, and QA chain"""
     
-    # Use temp directory for ChromaDB (Streamlit Cloud is read-only)
-    persist_dir = os.path.join(tempfile.gettempdir(), "chroma_db_ads")
-    os.makedirs(persist_dir, exist_ok=True)
+    # Connect to Supabase
+    with st.spinner("Connecting to database..."):
+        client = supabase.create_client(supabase_url, supabase_key)
     
     # Free embeddings from HuggingFace
     with st.spinner("Loading AI models..."):
@@ -180,24 +130,76 @@ def initialize_system(groq_key: str):
             model_name="sentence-transformers/all-MiniLM-L6-v2"
         )
     
-    # Load documents
-    pdf_dir = "./pdfs"
-    if not os.path.exists(pdf_dir):
-        st.error("❌ PDFs folder not found!")
-        return None, None
+    # Check if documents exist in Supabase
+    with st.spinner("Checking knowledge base..."):
+        result = client.table("documents").select("id", count="exact").limit(1).execute()
+        doc_count = result.count if hasattr(result, 'count') else 0
     
-    with st.spinner("Loading documents..."):
-        documents = load_documents(pdf_dir)
-    
-    if not documents:
-        st.error("❌ No documents found in pdfs folder!")
-        return None, None
-    
-    st.info(f"📄 Loaded {len(documents)} document sections")
-    
-    # Create vectorstore
-    with st.spinner("Creating knowledge base..."):
-        vectorstore = create_vectorstore(documents, embeddings, persist_dir)
+    if doc_count == 0:
+        st.warning("⚠️ No documents in database. Loading from PDFs...")
+        
+        # Download PDFs from Supabase storage
+        with st.spinner("Loading documents from storage..."):
+            try:
+                # List files in pdfs bucket
+                files = client.storage.from_("pdfs").list()
+                documents = []
+                
+                for file in files:
+                    if file['name'].endswith(('.pdf', '.txt')):
+                        # Download file
+                        data = client.storage.from_("pdfs").download(file['name'])
+                        
+                        # Save to temp file for loading
+                        with tempfile.NamedTemporaryFile(delete=False, suffix=Path(file['name']).suffix) as tmp:
+                            tmp.write(data)
+                            tmp_path = tmp.name
+                        
+                        # Load document
+                        if file['name'].endswith('.pdf'):
+                            loader = PyPDFLoader(tmp_path)
+                        else:
+                            loader = TextLoader(tmp_path)
+                        
+                        docs = loader.load()
+                        for doc in docs:
+                            doc.metadata['source'] = file['name']
+                        documents.extend(docs)
+                        
+                        os.unlink(tmp_path)
+                
+                st.info(f"📄 Loaded {len(documents)} document sections")
+                
+                # Split documents
+                text_splitter = RecursiveCharacterTextSplitter(
+                    chunk_size=1000,
+                    chunk_overlap=200
+                )
+                splits = text_splitter.split_documents(documents)
+                
+                # Store in Supabase
+                with st.spinner("Building knowledge base (this may take a few minutes)..."):
+                    vectorstore = SupabaseVectorStore.from_documents(
+                        documents=splits,
+                        embedding=embeddings,
+                        client=client,
+                        table_name="documents",
+                        query_name="search_documents"
+                    )
+                
+                st.success(f"✅ Knowledge base built with {len(splits)} chunks")
+                
+            except Exception as e:
+                st.error(f"Error loading documents: {str(e)}")
+                return None
+    else:
+        st.info(f"📚 Knowledge base ready ({doc_count} chunks)")
+        vectorstore = SupabaseVectorStore(
+            client=client,
+            embedding=embeddings,
+            table_name="documents",
+            query_name="search_documents"
+        )
     
     # Free LLM from Groq
     with st.spinner("Connecting to AI..."):
@@ -243,20 +245,20 @@ Answer:
         chain_type_kwargs={"prompt": prompt}
     )
     
-    return qa_chain, vectorstore
+    return qa_chain
 
 # Chat interface
-if groq_key:
+if groq_key and supabase_url and supabase_key:
     # Initialize on first run
     if not st.session_state.initialized:
         with st.spinner("Initializing Ads Mastery AI..."):
-            st.session_state.qa_chain, st.session_state.vectorstore = initialize_system(groq_key)
+            st.session_state.qa_chain = initialize_system(groq_key, supabase_url, supabase_key)
         
         if st.session_state.qa_chain:
             st.session_state.initialized = True
             st.success("✅ Ready! Ask your ads questions below.")
         else:
-            st.error("❌ Failed to initialize. Check that PDFs are in the pdfs folder.")
+            st.error("❌ Failed to initialize. Check your Supabase configuration.")
     
     # Only show chat if initialized
     if st.session_state.initialized and st.session_state.qa_chain:
@@ -322,39 +324,20 @@ if groq_key:
                         st.info("💡 Try refreshing the page if the error persists.")
 
 else:
-    # Show demo interface when no API key
-    st.info("👈 Enter your free Groq API key in the sidebar to start chatting")
+    # Show setup instructions
+    st.error("⚠️ Missing credentials! Add these to Streamlit secrets:")
+    st.code("""
+GROQ_API_KEY = "your_groq_key"
+SUPABASE_URL = "https://your-project.supabase.co"
+SUPABASE_SERVICE_KEY = "your_service_role_key"
+    """)
     
-    # Show demo chat
-    st.markdown("### Preview")
-    with st.chat_message("user"):
-        st.markdown("How do I set up my first Meta ad campaign?")
-    with st.chat_message("assistant"):
-        st.markdown("""
-        Based on the Mastering Meta Ads 2026 guide:
-        
-        **Step 1: Campaign Objective**
-        Choose your objective (Awareness, Traffic, or Conversions)
-        
-        **Step 2: Audience Targeting**
-        Start with interest-based targeting, then refine with lookalikes
-        
-        **Step 3: Budget**
-        The guide recommends starting with $5-10/day for testing
-        
-        **Step 4: Creative**
-        Use attention-grabbing visuals in the first 3 seconds
-        
-        💡 *Enter your API key above to get real answers!*
-        """)
-    
-    # CTA for demo users
     st.markdown("""
-    <div class="cta-box">
-        <h4>📚 Want the Complete System?</h4>
-        <p>Get all 4 PDF guides + AI chatbot access + community!</p>
-        <a href="https://gumroad.com/l/ads-mastery-bundle-2026" target="_blank">
-            → Get Ads Mastery Bundle (Launch Price: $47)
-        </a>
-    </div>
-    """, unsafe_allow_html=True)
+    ### Setup Steps:
+    
+    1. **Groq API Key** - Get free at [groq.com](https://groq.com)
+    2. **Supabase Project** - Create at [supabase.com](https://supabase.com)
+    3. **Run SQL Setup** - Execute `supabase-setup.sql` in SQL Editor
+    4. **Upload PDFs** - Add to `pdfs` storage bucket
+    5. **Get Keys** - From Project Settings → API
+    """)

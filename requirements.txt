@@ -15,5 +15,8 @@ pypdf>=3.0.0
 # Vector Store
 chromadb>=0.4.0
 
+# Supabase (Production)
+supabase>=2.0.0
+
 # Embeddings
 sentence-transformers>=2.2.0
