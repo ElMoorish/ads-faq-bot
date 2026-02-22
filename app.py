@@ -387,9 +387,9 @@ Be brutally honest. The goal is to help improve conversion rates.
 
 Format your response with clear sections and emoji headers."""
                 
-                # Call vision API (llava for image analysis)
+                # Call vision API (Llama 4 Scout for image analysis)
                 response = client.chat.completions.create(
-                    model="llava-v1.5-7b-4096-preview",
+                    model="meta-llama/llama-4-scout-17b-16e-instruct",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {
