@@ -214,7 +214,7 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     with st.spinner("Connecting to AI..."):
         llm = ChatGroq(
             groq_api_key=groq_key,
-            model_name="llama-3.1-70b-versatile",
+            model_name="llama-3.3-70b-versatile",  # Updated model
             temperature=0.7
         )
     
