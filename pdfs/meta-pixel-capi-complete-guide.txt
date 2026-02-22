@@ -1,0 +1,297 @@
+# Meta Pixel & Conversions API (CAPI): Complete Setup Guide
+
+Source: FunnelFox, Ads Uploader, SlvrWlf (2025-2026)
+Last Updated: 2026-02-22
+
+---
+
+## Why You Need Both Pixel + CAPI
+
+In 2025-2026, **Pixel alone is not enough**.
+
+- iOS 14.5+ killed third-party tracking
+- Browser privacy settings block tracking scripts
+- Ad blockers block the Pixel entirely
+- Third-party cookies are dying
+
+**Solution**: Meta Pixel (browser) + Conversions API (server) together.
+
+| Feature | Meta Pixel | Conversions API |
+|---------|------------|-----------------|
+| Source | Browser | Server |
+| Can be blocked | Yes | No |
+| Mobile in-app browsers | Often broken | Stable |
+| Deduplication | Needs setup | Server-level |
+| 3rd-party checkout | Often lost | Fully tracked |
+
+---
+
+## What is Meta Pixel?
+
+Meta Pixel is a JavaScript tracking code added to your website to capture user actions after clicking a Facebook/Instagram ad:
+
+- Page views
+- Sign-ups
+- Onboarding completion
+- Trial starts
+- Purchases
+
+### How Meta Pixel Works
+
+1. User clicks on Facebook/Instagram ad
+2. User lands on your page
+3. Meta Pixel event fires in browser (page view, onboarding start, purchase)
+4. Event sent to Meta Events Manager
+5. Meta matches event to the ad and uses it for optimization
+
+### What Meta Pixel Gives You
+
+1. **Optimization based on business events**
+   - Algorithm learns from revenue-driving actions (purchases, registrations, trials)
+   - Not just clicks
+
+2. **Full visibility into the web-stage funnel**
+   - See where users drop off
+   - Know which steps they complete before payment
+   - Understand which creative + landing + offer combinations convert
+
+3. **Full-funnel retargeting**
+   - Re-engage users who viewed pricing
+   - Target abandoned checkout
+   - Reach users who started onboarding but didn't complete
+
+4. **Audience building and scaling**
+   - Build Custom Audiences from any web event
+   - Create Lookalike audiences based on conversions
+   - Expand to users who behave like your paying customers
+
+5. **Linking web data to app revenue**
+   - Combine with app SDK or server-side events
+   - Connect web behavior to in-app subscriptions
+
+---
+
+## What is Conversions API (CAPI)?
+
+**Conversions API (CAPI)** is server-side tracking that sends conversion events directly from your server to Meta's API.
+
+### Why CAPI Exists
+
+Apple's iOS 14.5 update in 2021 introduced App Tracking Transparency:
+- Users could opt out of cross-app tracking
+- Ad performance tanked overnight
+- Browser-based measurement became unreliable
+
+Meta's answer: Server-side tracking that:
+- Respects user privacy
+- Maintains ad measurement accuracy
+- Bypasses browser restrictions
+
+### What CAPI Does
+
+- Sends events directly from your server to Meta
+- Bypasses ad blockers, iOS privacy limits, browser restrictions
+- Works when browser-based tracking fails
+- Provides reliable conversion data
+
+---
+
+## How Pixel + CAPI Work Together
+
+In web2app funnels:
+
+| Stage | Tracking Method |
+|-------|-----------------|
+| Pre-install journey (page views, onboarding, checkout views) | Meta Pixel |
+| Payments, subscription renewals | Conversions API |
+
+**Result**: Meta receives continuous signals from first click to purchase and renewals.
+
+This enables:
+- Optimization based on revenue
+- Stable algorithm learning
+- Precise retargeting
+- Consistent UA without data blind spots
+
+---
+
+## Meta Pixel Setup
+
+### Step 1: Create Meta Pixel
+
+1. Go to Meta Events Manager
+2. Click **Connect data** → Select **Web**
+3. Click **Connect**
+4. Enter name for your pixel
+5. Click **Create pixel** — Pixel ID (Dataset ID) generated
+6. Save the Pixel ID
+
+### Step 2: Install Pixel Code
+
+**Add base code to `<head>` section of every page:**
+- Place it as high in the code as possible
+- Ensure it loads before other scripts
+
+### Installation Options
+
+| Method | Best For |
+|--------|----------|
+| Partner Integration | Shopify, WordPress, Wix, Squarespace |
+| Manual Install | Custom websites, developers |
+| Email to Developer | Teams with technical resources |
+
+### Step 3: Configure Events
+
+Two ways to configure:
+1. **Event Setup Tool** (point-and-click in interface)
+2. **Manual code installation**
+
+During setup:
+- Select existing Pixel
+- Define which on-page actions to track
+- Map to Meta's standard events
+- Verify events in Events Manager
+
+### Standard Events for Subscription Apps
+
+| Event | When to Use |
+|-------|-------------|
+| ViewContent | User views product/content |
+| InitiateCheckout | User starts checkout |
+| CompleteRegistration | User completes sign-up |
+| StartTrial | User begins trial |
+| Purchase | User completes payment |
+
+**Important**: Always prioritize standard events over custom events for UA campaigns. Custom events:
+- Cannot be optimized with same efficiency
+- Not used for algorithm training
+- Some parameters may be ignored
+
+---
+
+## Conversions API Setup
+
+### Step 1: Enable CAPI
+
+1. In Meta Events Manager, enable Conversions API for selected Pixel
+2. Generate CAPI Access Token
+3. Use token to authorize server-to-server event delivery
+4. Events appear in Events Manager as server-side
+
+### Setup Methods
+
+| Method | Difficulty | Best For |
+|--------|------------|----------|
+| Partner Integration | Easy | Shopify, WordPress, etc. |
+| CAPI Gateway | Intermediate | Custom platforms, no developer |
+| Custom Integration | Advanced | Custom-built sites, full control |
+
+### Partner Integration (Recommended)
+
+Platforms supported:
+- Shopify
+- WordPress (PixelYourSite plugin)
+- Wix
+- Squarespace
+
+**Steps**:
+1. Events Manager → Add Events → From a Partner Integration
+2. Select your platform
+3. Follow prompts to connect Pixel + CAPI
+
+### CAPI Gateway (Intermediate)
+
+Best for:
+- Businesses without a developer
+- Custom platforms
+- Teams needing more event control
+
+**Steps**:
+1. Events Manager → Pixel → Add Events → Using Conversions API Gateway
+2. Follow setup guide (runs through hosting provider)
+3. Acts as bridge between server and Meta
+
+### Custom Integration (Advanced)
+
+For businesses with developers:
+- PHP, Node.js, Python implementations
+- Custom events (order value, product category)
+- Full control and data fidelity
+
+---
+
+## Event Deduplication
+
+**Critical**: When using both Pixel and CAPI, deduplication prevents double-counting.
+
+Deduplication uses:
+- `event_id` — unique identifier for each event
+- `external_id` — user identifier
+
+When Meta receives the same event from both sources (same `event_id`), it counts it once.
+
+---
+
+## Verification Checklist
+
+### 1. Test Events
+
+In Events Manager → Test Events:
+- Open funnel in test mode
+- Perform actions (page views, purchases)
+- Verify events appear in Test Events panel
+
+### 2. Check Diagnostics
+
+Events Manager → Diagnostics tab:
+- Verify Pixel is firing correctly
+- Check for errors or warnings
+- Monitor event match quality
+
+### 3. Verify Server Events
+
+Events Manager should show both:
+- Browser events (from Pixel)
+- Server events (from CAPI)
+
+### 4. Monitor Event Match Quality (EMQ)
+
+EMQ measures how well Meta can match events to users:
+- Higher EMQ = better optimization
+- Aim for 6.0+ score
+- Improve by sending more user parameters (email, phone)
+
+---
+
+## Key Benefits Summary
+
+| Benefit | Pixel | CAPI | Both Together |
+|---------|-------|------|---------------|
+| Real-time browser tracking | ✅ | ❌ | ✅ |
+| Bypasses ad blockers | ❌ | ✅ | ✅ |
+| Works in in-app browsers | ❌ | ✅ | ✅ |
+| 3rd-party checkout tracking | ❌ | ✅ | ✅ |
+| Privacy compliant | ⚠️ | ✅ | ✅ |
+| Improved attribution | ✅ | ✅ | ✅✅ |
+| Data accuracy recovery | 70% | 100% | 95-100% |
+
+**Bottom Line**: Pixel + CAPI together recover 20-30% of lost conversion data and improve attribution accuracy.
+
+---
+
+## Quick Setup Checklist
+
+- [ ] Create Meta Pixel in Events Manager
+- [ ] Install Pixel base code on all pages
+- [ ] Configure standard events (ViewContent, InitiateCheckout, Purchase)
+- [ ] Enable Conversions API for the Pixel
+- [ ] Generate CAPI Access Token
+- [ ] Set up event deduplication (event_id, external_id)
+- [ ] Test events in Test Events panel
+- [ ] Verify both browser and server events in Events Manager
+- [ ] Monitor Event Match Quality (EMQ) score
+- [ ] Check Diagnostics tab for errors
+
+---
+
+*Sources: FunnelFox Blog, Ads Uploader, SlvrWlf (2025-2026)*

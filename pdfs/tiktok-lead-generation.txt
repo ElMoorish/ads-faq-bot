@@ -1,0 +1,120 @@
+# About Lead Generation Objective | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Lead generation is an advertising objective that lets you cultivate prospects and engage leads on TikTok or collect lead information on your own website.
+
+---
+
+## How It Works
+
+When someone taps the CTA button on a lead ad:
+
+1. **Instant Form** opens
+   - Learn about your business
+   - Leave contact information
+   - Signal interest in product/service
+
+2. **Redirect Options:**
+   - Your website for contact info
+   - TikTok Direct Messages
+   - Popular instant messaging apps
+
+---
+
+## Benefits of Instant Forms
+
+| Benefit | Description |
+|---------|-------------|
+| **Faster conversions** | Forms load faster than typical landing pages |
+| **Pre-populated fields** | Auto-fill based on available information |
+| **Higher conversion rate** | Frictionless experience |
+| **Customizable design** | Your messaging and layout |
+| **Web traffic** | Redirect after form submission |
+| **CRM integration** | Sync with Zapier, LeadsBridge, Custom APIs |
+
+---
+
+## When to Use Your Own Website Form
+
+- ✅ Boost traffic to your own site
+- ✅ Qualify leads via existing logic on your site
+- ✅ Ask detailed qualifying questions not supported by TikTok instant form
+
+---
+
+## Industry Use Cases
+
+| Industry | Use Case |
+|----------|----------|
+| **Retail/E-commerce** | Collect contact info for samples, exclusive offers |
+| **Auto** | Schedule test drives |
+| **Professional Services** | Find potential customers, recruit employees |
+| **Education** | Schedule campus visits |
+
+---
+
+## Case Studies
+
+### Lazada (Southeast Asia)
+- **Goal:** Attract new customers and retailers
+- **Result:** 47% of form submitters became sellers within 1 week
+
+### Nina Ricci (Spain)
+- **Goal:** Promote new fragrance, collect sample requests
+- **Results:**
+  - 41.85% conversion rate
+  - 83% reduction in cost per lead
+
+---
+
+## Best Practices
+
+### Campaign Structure
+- Launch with **3-5 ad groups**
+- Different targeting settings per ad group
+- Different creative per ad group
+
+### Budget
+- Daily budget = **10x your expected CPA**
+
+### Targeting
+- Start with **broadly defined audiences**
+- Analyze performance to refine
+
+### Integration
+- Connect TikTok Leads to CRM
+- Automate marketing funnel
+
+### Lead Forecast Tool
+Use the lead forecast tool to estimate daily leads based on:
+- Optimization location: Instant Form or website
+- Budget: Daily budget
+- Bidding: Maximum delivery
+- Targeting: Broad audience
+
+**Access:** Right navigation of TikTok Ads Manager when editing ad group settings
+
+---
+
+## Quick Setup Checklist
+
+- [ ] Choose lead generation objective
+- [ ] Create instant form OR use website form
+- [ ] Set up 3-5 ad groups with different targeting
+- [ ] Set daily budget (10x expected CPA)
+- [ ] Integrate CRM (Zapier, LeadsBridge, or API)
+- [ ] Use lead forecast tool for estimates
+- [ ] Test multiple creatives
+
+---
+
+## Related Articles
+
+- Instant Forms: https://ads.tiktok.com/help/article?aid=10001626
+- CRM Integrations: https://ads.tiktok.com/help/article/available-crm-integrations-tiktok-lead-generation
+
+---
+
+*Source: https://ads.tiktok.com/help/article/lead-generation-objective?lang=en*

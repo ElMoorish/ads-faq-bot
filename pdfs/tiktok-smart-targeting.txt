@@ -1,0 +1,82 @@
+# About Smart Targeting | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Smart Targeting helps you find users most likely to complete your objective, such as completing a payment.
+
+---
+
+## What It Does
+
+- Allows TikTok to deliver ads **outside** designated Interest & Behaviors or Audience settings
+- Only expands if it likely improves ad performance
+- **Reduces Cost Per Acquisition (CPA)**
+- **Reduces ad fatigue** for most advertisers
+
+---
+
+## Available Objectives
+
+Smart Targeting is available for auction bidding with:
+
+| Objective | Available |
+|-----------|-----------|
+| Video views | ✅ |
+| Community interaction | ✅ |
+| Traffic | ✅ |
+| Lead generation | ✅ |
+| App install | ✅ |
+| Web conversion | ✅ |
+
+**NOT available for:** Global App Bundle or TikTok Pangle placements
+
+---
+
+## How It Works
+
+1. You set targeting criteria
+2. Ad launches based on your target
+3. Model observes ad performance
+4. If underperforming OR users outside targeting likely to convert:
+   - System expands targeting to maximize objectives
+5. Expanded settings apply automatically when beneficial
+
+**Important:** Smart Targeting does NOT affect other targeting variables (age, gender, location)
+
+---
+
+## Key Features
+
+### Audience Size Estimation
+- Uses your targeting criteria to determine audience size
+- Tool does NOT update when Smart Targeting enabled
+- If Smart Targeting triggers → reach users beyond initial audience size
+
+### Audience Selection Impact
+- Ad group launches with your exact targeting settings
+- Over time, may expand if system determines it improves performance
+
+### vs. Targeting Expansion
+- More control over what to expand
+- Optimized ad delivery model for better performance
+
+### Expanded Audience Timing
+- No set time for applying expanded settings
+- Automatically applies when system determines greater chance of success
+
+---
+
+## Quick Reference
+
+| Feature | Behavior |
+|---------|----------|
+| **Starting criteria** | Your exact targeting |
+| **Expansion trigger** | Performance optimization |
+| **Affected variables** | Interests, behaviors, audiences |
+| **Unaffected variables** | Age, gender, location |
+| **Timing** | Automatic when beneficial |
+
+---
+
+*Source: https://ads.tiktok.com/help/article/smart-targeting?lang=en*

@@ -1,0 +1,110 @@
+# TikTok Ads Best Practices Index
+## Complete Guide to All Best Practices
+**Last Updated:** September 2025
+
+---
+
+## Ad Creation Best Practices
+
+| Topic | Link |
+|-------|------|
+| Campaigns | https://ads.tiktok.com/help/article/account-structure-best-practices |
+| Targeting | https://ads.tiktok.com/help/article/best-practices-for-targeting |
+| Lookalike Audience | https://ads.tiktok.com/help/article/best-practices-for-a-lookalike-audience |
+| Landing Page Optimization | https://ads.tiktok.com/help/article/landing-page-loading-optimizations |
+| Instant Pages | https://ads.tiktok.com/help/article/instant-pages-best-practices |
+| Ad Reviews | https://ads.tiktok.com/help/article/ad-review-checklist |
+| Automated Rules | https://ads.tiktok.com/help/article/automated-rules-guidance |
+| Promote | https://ads.tiktok.com/help/article/best-practices-for-using-promote-to-drive-customer-interest-and-actions |
+| TikTok Shop | https://ads.tiktok.com/help/article/considerations-when-launching-your-tiktok-shop-journey |
+
+---
+
+## Ad Objectives Best Practices
+
+| Topic | Link |
+|-------|------|
+| App Event Optimization (AEO) | https://ads.tiktok.com/help/article/best-practices-for-app-event-optimization |
+| Value-Based Optimization (App) | https://ads.tiktok.com/help/article/tips-for-value-based-optimization-for-app |
+| iOS 14.5+ Account Management | https://ads.tiktok.com/help/article/best-practices-for-account-management-for-ios-14-5 |
+| iOS 14.5+ Campaign Objectives | https://ads.tiktok.com/help/article/best-practices-for-campaign-objectives-for-ios-14-5 |
+| App Retargeting | https://ads.tiktok.com/help/article/best-practices-for-app-retargeting |
+| Deep Funnel Optimization | https://ads.tiktok.com/help/article/tips-for-deep-funnel-optimization |
+| Catalog Event Match Rates | https://ads.tiktok.com/help/article/best-practices-for-increasing-catalog-event-match-rates |
+| Catalog Quality | https://ads.tiktok.com/help/article/best-practices-for-a-high-quality-catalog |
+| Product Sets Filtering | https://ads.tiktok.com/help/article/tips-for-filtering-products-in-your-product-sets |
+| Product Sets | https://ads.tiktok.com/help/article/best-practices-for-product-sets |
+| TikTok Shop Gross Revenue | https://ads.tiktok.com/help/article/best-practices-for-gross-revenue-optimization-for-tiktok-shop-ads |
+| TikTok Shop Keywords | https://ads.tiktok.com/help/article/best-practices-for-keywords-expansion-for-tiktok-shop-ads |
+| Video Shopping Ads | https://ads.tiktok.com/help/article/best-practices-for-video-shopping-ads-with-tiktok-shop |
+| LIVE Shopping Creatives | https://ads.tiktok.com/help/article/best-practices-for-live-shopping-ads-creatives |
+| LIVE Shopping Optimization | https://ads.tiktok.com/help/article/best-practices-for-optimizing-live-shopping-ads |
+| LIVE Shopping Audience | https://ads.tiktok.com/help/article/audience-best-practices-for-live-shopping-ads |
+| LIVE Shopping Budget | https://ads.tiktok.com/help/article/best-practices-for-setting-a-live-shopping-ads-budget |
+| Product Shopping Ads | https://ads.tiktok.com/help/article/considerations-for-product-shopping-ads |
+| Value-Based Optimization (Web) | https://ads.tiktok.com/help/article/tips-for-value-based-optimization-for-web |
+
+---
+
+## Ad Formats Best Practices
+
+| Topic | Link |
+|-------|------|
+| Search Ads Creative | https://ads.tiktok.com/help/article/search-ads-creative |
+| TikTok Pangle In-App Events | https://ads.tiktok.com/help/article/best-practices-for-in-app-event-optimization-using-pangle-placement |
+| TikTok Pangle iOS 14.5+ | https://ads.tiktok.com/help/article/pangle-considerations-ios14 |
+| Showtimes | https://ads.tiktok.com/help/article/showtimes-best-practices |
+| Automotive Ads | https://ads.tiktok.com/help/article/best-practices-for-automotive-ads |
+| Travel Ads | https://ads.tiktok.com/help/article/best-practices-for-travel-ads-creatives |
+
+---
+
+## Ad Optimization Best Practices
+
+| Topic | Link |
+|-------|------|
+| Smart+ Web Campaigns | https://ads.tiktok.com/help/article/best-practices-for-smart-plus-web-campaigns |
+| Smart+ App Campaigns | https://ads.tiktok.com/help/article/best-practices-for-smart-plus-app-campaigns |
+| Smart+ Lead Campaigns | https://ads.tiktok.com/help/article/best-practices-for-smart-lead-generation-campaigns |
+| Budget | https://ads.tiktok.com/help/article/budget-best-practices |
+| Bidding Strategies | https://ads.tiktok.com/help/article/best-practices-for-bidding-strategies |
+| Split Testing | https://ads.tiktok.com/help/article/split-test-best-practices |
+| Auction Ads | https://ads.tiktok.com/help/article/auction-ads-best-practices |
+| Creatives for Performance | https://ads.tiktok.com/help/article/creative-best-practices |
+| LIVE GMV Max | https://ads.tiktok.com/help/article/best-practices-for-live-gmv-max |
+| Product GMV Max Quality | https://ads.tiktok.com/help/article/tips-to-measure-product-and-video-quality-in-your-product-gmv-max-campaign |
+| Max Delivery Optimization | https://ads.tiktok.com/help/article/best-practices-for-max-delivery-optimization |
+
+---
+
+## Measurement Best Practices
+
+| Topic | Link |
+|-------|------|
+| Measurement | https://ads.tiktok.com/help/article/best-practices-for-measurement |
+| Web Data Connections | https://ads.tiktok.com/help/article/best-practices-for-web-data-connections |
+| Self-Attributing Network | https://ads.tiktok.com/help/article/best-practices-for-tiktoks-self-attributing-network |
+| Advanced Matching (Web) | https://ads.tiktok.com/help/article/best-practices-for-advanced-matching-for-web |
+| Audience Insights | https://ads.tiktok.com/help/article/audience-insights-best-practices |
+| Video Insights | https://ads.tiktok.com/help/article/best-practices-for-video-insights |
+| UTM Parameters | https://ads.tiktok.com/help/article/utm-parameters-best-practices |
+
+---
+
+## Quick Reference by Use Case
+
+### New to TikTok Ads
+1. Campaigns → Targeting → Creatives → Measurement
+
+### E-commerce
+1. TikTok Shop → Catalog → Product Shopping Ads → GMV Max
+
+### App Developers
+1. App Event Optimization → App Retargeting → iOS 14.5+ Considerations
+
+### Lead Generation
+1. Smart+ Lead Campaigns → Instant Pages → Landing Page Optimization
+
+---
+
+*Source: https://ads.tiktok.com/help/article/tiktok-ads-best-practices?lang=en*

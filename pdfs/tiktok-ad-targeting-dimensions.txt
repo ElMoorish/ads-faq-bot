@@ -1,0 +1,60 @@
+# Ad Targeting Dimensions | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Ad targeting allows you to deliver ads to specific people based on:
+
+---
+
+## Targeting Dimensions
+
+| Dimension | Description |
+|-----------|-------------|
+| **Demographics** | Age, gender, language |
+| **Audience Targeting** | Custom audiences, lookalikes |
+| **Advanced Targeting** | Interests, behaviors |
+| **Device Type** | iOS, Android, specific devices |
+| **Smart Targeting** | AI-expanded targeting |
+
+---
+
+## How Targeting Logic Works
+
+### Within Same Dimension = OR Logic
+Selections within the same dimension operate on **OR logic**.
+
+**Example:** If you select Interest Beauty OR #makeup within Interest and Behavior:
+- TikTok includes people who meet **EITHER** criteria
+
+### Across Dimensions = AND Logic
+Selections across dimensions operate with **AND logic**.
+
+**Example:** If you select Female AND 25-44:
+- TikTok only includes users that meet **BOTH** criteria
+
+---
+
+## Where to Configure
+
+Targeting settings are configured at the **ad group level** during campaign creation.
+
+---
+
+## Important Notes
+
+- **Available targeting locations vary by market**
+- Some targeting settings may not be available for age-restricted products/services
+- Special rules apply when advertising to people under 18
+
+---
+
+## Related Articles
+
+- Save targeting settings: https://ads.tiktok.com/help/article/about-saved-audience
+- Location targeting: https://ads.tiktok.com/help/article/location-targeting
+- Advertising to under 18s: https://ads.tiktok.com/help/article/about-advertising-to-people-under-the-age-of-18
+
+---
+
+*Source: https://ads.tiktok.com/help/article/ad-targeting?lang=en*

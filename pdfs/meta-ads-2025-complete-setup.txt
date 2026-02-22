@@ -1,0 +1,225 @@
+# Meta Ads 2025: Complete Setup & Campaign Guide
+
+Source: Pansofic.com (2025)
+Last Updated: 2026-02-22
+
+---
+
+## Key Meta Ads 2025 Changes
+
+### 1. Meta Is All-In on Automation (Advantage+)
+Meta's Advantage+ suite is now the center of advertising ecosystem:
+- AI-driven automation handles targeting, placements, creative mix, budget distribution
+- Covers Shopping, App, and Lead campaigns
+- Tests multiple audience/creative combinations in real time
+- Automatically allocates spend to best performers
+
+### 2. Detailed Targeting Exclusions Removed
+As of March 2025, Meta retired several detailed targeting exclusions:
+- Pushes advertisers toward broader targeting
+- Relies on creative and data signals instead of micro-targeting
+- Audience precision depends on platform learning + event setup
+
+### 3. Conversions API (CAPI) Is Non-Negotiable
+- Browser-based tracking unreliable due to iOS restrictions
+- CAPI sends data directly from servers to Meta
+- Use alongside Pixel with deduplication
+- Baseline for trustworthy measurement
+
+### 4. Updated Marketing API and Attribution Rules
+- June 2025: Marketing API and Ads Insights updates
+- Unified attribution models
+- Affects CPA, reach, and conversion reporting
+
+### 5. Expanding Ad Placements and Creative Formats
+- New placements: Threads, Reels, Messenger
+- Threads beginning to accept native ad placements
+- Video-first, vertical, UGC-style creatives perform best
+- Meta prioritizes immersive, native-feeling formats
+
+---
+
+## Step-by-Step: Meta Ads Account Setup
+
+### Step 1: Create and Verify Business Account
+- Go to Meta Business Suite
+- Add legal business details, website, verified domain
+- Complete business verification through Security Center
+- Unlocks advanced tools, prevents restrictions, higher spending thresholds
+
+### Step 2: Create Ad Accounts and Payment Methods
+- Under Business Settings, create Ad Accounts
+- Add payment method (credit card, PayPal, invoice)
+- Assign users/agencies with admin or advertiser roles
+
+### Step 3: Install Meta Pixel and Conversions API
+- Add Meta Pixel via CMS or Google Tag Manager
+- Implement CAPI via partner integrations (Shopify, WooCommerce, Zapier)
+- In Events Manager, ensure both Pixel and CAPI firing correctly
+- Test events: ViewContent, AddToCart, Purchase
+
+### Step 4: Connect Product Catalogs or Mobile Apps
+- **E-commerce**: Set up Commerce Manager, upload catalog, link to pixel
+- **Apps**: Register app in Meta for Developers, integrate SDK, connect events
+- Verify catalog/app events sync in real time
+
+### Step 5: Define Events and Conversions
+- Choose primary optimization event (Purchase or Lead)
+- Create secondary events for mid-funnel actions
+- Align event priorities for Aggregated Event Measurement (iOS users)
+
+### Step 6: Prepare Creative Assets
+- Upload multiple formats: videos (6-15 sec), carousel, single images
+- Brand consistency, clear messaging in first few seconds
+- Advantage+ performs better with diverse creative inputs
+
+---
+
+## Campaign Objectives: Full Step-by-Step
+
+### 1. AWARENESS CAMPAIGNS
+
+**Aim**: Maximize reach and brand recall
+**Use For**: New brand/product launch, large branding campaigns
+
+**Setup**:
+1. Select Awareness as campaign goal
+2. Budget: 1000-2000/day recommended
+3. Targeting: Broad or light demographics, avoid micro-targeting
+4. Placements: Automated (Reels, Feeds, Stories)
+5. Creative: Short video or high-impact image with clear branding
+6. Optimization: Maximize Reach or Ad Recall Lift
+7. Measure: CPM, Reach, Frequency (not conversions)
+
+**Example**: Wellness brand runs large awareness campaign with short Reels of lifestyle moments. Success metrics: reach and CPM.
+
+---
+
+### 2. TRAFFIC CAMPAIGNS
+
+**Objective**: Push users to websites or apps
+**Use For**: Driving traffic to landing pages or product sites
+
+**Setup**:
+1. Select Traffic as objective
+2. Destination: Website, App, or Messenger
+3. Optimize for Landing Page Views
+4. Creative: Catchy headlines, clear CTAs
+5. Add UTM tracking for Google Analytics
+6. Measure: CPC, CTR, Bounce Rate
+
+**Example**: Software company promotes blog about automation tools to educate, then retargets with sales campaign.
+
+---
+
+### 3. ENGAGEMENT CAMPAIGNS
+
+**Promotion**: Comments, page growth, messages
+**Use For**: Building brand trust, engagement, social proof
+
+**Setup**:
+1. Select Engagement as objective
+2. Choose engagement type: Post Engagement, Page Likes, Messages
+3. Target: Existing followers, lookalikes, broad interest groups
+4. Creative: Content that triggers reactions/comments
+5. Optimization: Cost per engagement (CPE)
+6. Measure: Engagement rate, sentiment
+
+**Example**: Fashion brand runs engagement campaign with behind-the-scenes design videos. Boosts page followers and sharing before sale.
+
+---
+
+### 4. LEAD CAMPAIGNS
+
+**Strategy**: Drive leads via Meta forms or messaging apps
+**Use For**: Collecting prospects for services, consultations, sales
+
+**Setup**:
+1. Select Leads as goal
+2. Choose message type: More (quantity) or Higher (quality)
+3. Integrate CRM (HubSpot, Zoho) or use Zapier
+4. Form fields: Name, phone, email (keep minimal)
+5. Add qualifying questions to filter low-intent leads
+6. Automate follow-ups instantly via email/WhatsApp
+7. Measure: Cost per Lead (CPL), Opportunity Conversion
+
+**Example**: Real estate agency runs lead form ad for free home valuation. Leads go to CRM, follow-ups within minutes, high conversion rate.
+
+---
+
+### 5. APP PROMOTION CAMPAIGNS
+
+**Target**: App installs or in-app activation
+**Use For**: Scaling mobile app with performance metrics
+
+**Setup**:
+1. Select App Promotion as goal
+2. Integrate app in Meta Events Manager, test SDK events
+3. Optimization event: Installs, Registrations, or Purchases
+4. Use Advantage+ App Campaigns for automation
+5. Creative: Short demo videos showing app functionality
+6. Measure: Cost per Install (CPI), Retention rate, In-app purchases
+
+**Example**: Food delivery app runs Advantage+ App Promotion in new cities. After 500 installs, switches to optimizing for first order.
+
+---
+
+### 6. SALES CAMPAIGNS
+
+**Target**: Purchases, sign-ups, bookings
+**Use For**: E-commerce, service sales, subscription sign-ups
+
+**Setup**:
+1. Select Sales as objective
+2. Choose conversion location: Website, App, Messenger, WhatsApp
+3. Define conversion event: Purchase, Add to Cart, Complete Registration
+4. Budget: CBO or ABO (recommend CBO for scale)
+5. Targeting: Broad + lookalikes, or retargeting for warm audiences
+6. Creative: Product-focused videos, carousel with offers
+7. Measure: ROAS, CPA, Conversion Rate
+
+**Example**: E-commerce brand runs Sales campaign with Advantage+ Shopping, dynamic product ads, and broad targeting. Optimizes for Purchase events.
+
+---
+
+## Key Best Practices for 2025
+
+### Creative
+- First 3 seconds are critical
+- Video dominates (especially Reels)
+- UGC-style content outperforms polished ads
+- Test multiple variations (Advantage+ does this automatically)
+
+### Targeting
+- Broad targeting is now preferred
+- Let the algorithm find your audience
+- Use lookalikes based on high-value actions
+- Retarget engaged users
+
+### Budget
+- Ensure enough budget for 50+ events per week
+- CBO (Campaign Budget Optimization) for most use cases
+- ABO for testing or specific ad set control
+
+### Measurement
+- Pixel + CAPI both required
+- Deduplicate events between Pixel and CAPI
+- Use UTM parameters for cross-platform tracking
+- Monitor in Events Manager regularly
+
+---
+
+## Quick Reference: Campaign Objective Selector
+
+| Your Goal | Campaign Objective |
+|-----------|-------------------|
+| "Make people aware of my brand" | Awareness |
+| "Get people to my website" | Traffic |
+| "Get likes, comments, shares" | Engagement |
+| "Collect contact information" | Leads |
+| "Get app installs" | App Promotion |
+| "Drive sales/purchases" | Sales |
+
+---
+
+*Source: Pansofic.com - Meta Ads 2025 Setup and Campaign Guide*

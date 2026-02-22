@@ -1,0 +1,104 @@
+# About Smart+ Campaigns | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Businesses spend meaningful time and resources setting up their ads to achieve their goals. With Smart+ Campaigns, you can create a single campaign powered by AI for all of your performance objectives, and TikTok will help you to automate the process – across campaign and audience targeting, optimization, and creative - to attempt to deliver the right ad to the right person.
+
+---
+
+## Key Benefits
+
+### 1. Optimize for Performance
+- Build high performing campaigns with machine learning and predictive AI
+- Achieve your business' marketing goals
+
+### 2. Less Time on Ad Operations
+- Create your Smart+ Campaign and let TikTok handle the rest
+- Smart+ assists in creating and managing your ads
+- Save valuable time and effort
+
+### 3. Creative Made Easy
+- Reduce creative fatigue and costs
+- Automate how creatives are shown to your audience
+
+---
+
+## Features
+
+### Simplified Setup
+TikTok offers one simple and easy interface that guides you to success with minimal effort.
+
+**You only need to provide:**
+- Key Performance Indicators (KPIs)
+- Creative assets
+- Target geography
+- Target language
+
+**Smart+ handles:**
+- Targeting
+- Optimization
+- Bidding
+- Creative rotation
+
+### Optimize Ad Management
+TikTok helps you create and manage high-performing ads based on your business goals. Your campaigns benefit from all best practices built into Smart+ right out of the box.
+
+### Paid and Organic Optimization
+- Automatically add an organic anchor link to select posts
+- Drive conversions
+- Maximize impact across TikTok
+- **Note:** Anchor links only visible to users aged 18+
+
+### Automated Creative Generation
+TikTok's automated creative solution helps optimize ad creative combinations:
+- CTAs
+- Format variations
+- Ad group fatigue detection
+- Auto-refresh strategies
+
+**Benefits:**
+- Reduces ad fatigue
+- Prolongs ad group lifespan
+- Improves cost efficiency over time
+- Shifts budget towards highest-performing creative
+- Pauses poor performers
+
+### Advanced Creative AI Features
+Optional creative AI features include:
+- Adding and remixing various elements
+- Music
+- Hooks
+- Formats
+- Scripts
+- Generate and deliver multiple variations of ads
+
+**Note:** You can turn off Smart+ generated creatives in TikTok Ads Manager at any time.
+
+---
+
+## Supported Campaign Objectives
+
+Smart+ Campaigns support multiple campaign objectives:
+
+| Objective | Description | Learn More |
+|-----------|-------------|------------|
+| **Sales** | Drive website sales | Smart+ Web Campaign |
+| **App Promotion** | Drive app installs | Smart+ App Campaign |
+| **Lead Generation** | Collect leads | Smart+ Lead Gen Campaign |
+| **Traffic** | Drive website visits | Smart+ Traffic Campaign |
+
+---
+
+## Related Articles
+
+- Smart+ Web Campaign: https://ads.tiktok.com/help/article/about-smart-plus-web-campaigns
+- Smart+ App Campaign: https://ads.tiktok.com/help/article/about-smart-plus-app-campaigns
+- Smart+ Lead Generation Campaign: https://ads.tiktok.com/help/article/about-smart-plus-lead-generation-campaigns
+- Smart+ Traffic Campaign: https://ads.tiktok.com/help/article/about-smart-plus-traffic-campaigns
+- Smart+ paid and organic optimization: https://ads.tiktok.com/help/article/about-smart-plus-paid-and-organic-optimization
+- Generate with AI: https://ads.tiktok.com/help/article/about-generate-with-ai-in-tiktok-ads-manager
+
+---
+
+*Source: https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en*

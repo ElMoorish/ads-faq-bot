@@ -1,0 +1,220 @@
+# Create Ad Campaigns in Meta Ads Manager
+## Meta Business Help Center
+
+---
+
+This article explains how to create a new campaign, ad set and ad from scratch in Meta Ads Manager.
+
+---
+
+## Advertising Levels in Meta Ads Manager
+
+Meta Ads Manager is a unified ad creation tool that you can use to create and publish ads to Facebook, Messenger, Instagram, WhatsApp and Meta Audience Network.
+
+### Three-Level Hierarchy
+
+| Level | Purpose | Contains |
+|-------|---------|----------|
+| **Campaign** | Select ad objective / overall goal | One or more ad sets |
+| **Ad Set** | Define audience, placements, budget, schedule | One or more ads |
+| **Ad** | Design the ad (format, images, video, text, links) | The actual creative |
+
+---
+
+## Before You Begin
+
+### Setup Requirements
+1. **Account Overview:** New users see guided setup at Account overview page
+2. **Payment Method:** Add before publishing first ad
+3. **Opportunity Score:** When eligible, see recommendations to improve performance
+   - Note: Score doesn't guarantee actual or future performance
+
+---
+
+## Create Campaign Steps
+
+### Step 1: Campaign Level
+
+1. Go to Meta Ads Manager: https://web.facebook.com/adsmanager/manage
+2. Select **+ Create campaign**
+
+#### Buying Type
+- **Auction** (most common) - Bid-based ad delivery
+- **Reservation** - Guaranteed placement (follow different setup)
+
+#### Choose Objective
+Select from objectives in drop-down menu:
+- Awareness (Brand Awareness, Reach)
+- Consideration (Traffic, Engagement, App Installs, Video Views, Lead Generation, Messages)
+- Conversion (Conversions, Catalog Sales, Store Traffic)
+
+**Note:** Sales, App promotion, and Leads objectives have streamlined experience with **Advantage+** turned on by default:
+- Advantage+ audience
+- Advantage+ placements
+- Campaign budget
+
+#### Campaign Settings
+- **Campaign Name:** Descriptive name
+- **Special Ad Category:** Required for housing, employment, financial products, social issues, elections, politics
+- **Budget Type:** Campaign budget OR Ad set budget
+  - Daily budget OR Lifetime budget
+
+#### Optional Settings
+- **A/B Test:** Toggle on to set up testing after publishing
+
+---
+
+### Step 2: Ad Set Level
+
+1. Enter **Ad set name**
+2. Configure based on objective type:
+
+#### For Conversion, Awareness, or App:
+- **Conversion location** OR **App name**
+- **Performance goal**
+- **Facebook Page:** Select your business Page
+- **Attribution:** Standard or Incremental attribution
+
+#### Dynamic Creative
+- Toggle on to let system optimize creative combinations
+- **Note:** June 2024 - Dynamic creative deprecated for Sales/App promotion objectives; use Flexible ad format instead
+
+#### Budget and Schedule
+- **Daily budget** OR **Lifetime budget**
+- **Start date** (required)
+- **End date** (optional)
+- **Budget scheduling** (for daily budgets)
+- **Ad scheduling** (for lifetime budgets)
+
+#### Audience
+- Complete **Audience controls**
+- Set up **Advantage+ audience**
+- Define targeting (demographics, interests, behaviors)
+
+#### Placements
+- **Advantage+ placements:** Let Meta choose best placements (RECOMMENDED)
+- **Manual placements:** Choose specific placements yourself
+
+---
+
+### Step 3: Ad Level
+
+1. Enter **Ad name**
+2. Select **Identity:** Facebook Page and Instagram account
+
+#### Ad Setup Options
+| Option | Description |
+|--------|-------------|
+| **Create ad** | Build new ad from scratch |
+| **Use existing post** | Turn published post into ad |
+| **Use Creative Hub mockup** | Create from mockup |
+
+#### Ad Formats
+| Format | Description | Best For |
+|--------|-------------|----------|
+| **Single image or video** | One image or video | Simple messaging |
+| **Carousel** | 2-10 cards with images/videos | Multiple products, storytelling |
+| **Collection** | Cover + product grid | E-commerce, catalogs |
+
+#### Creative Elements
+- **Media:** Upload images/videos or use existing
+- **Turn into video:** Convert images to video
+- **Primary text:** Main ad copy
+- **Headline:** Bold title
+- **Description:** Supporting text
+- **Call to action (CTA):** Button text
+
+---
+
+## Ad Enhancements
+
+### Advantage+ Creative Enhancements
+Meta may automatically enable:
+- Visual touch-ups
+- Text improvements
+- Music
+
+**Note:** Can be turned off before publishing
+
+### Generative AI Features
+- **Image generation:** New image variations or backgrounds
+- **Text generation:** Multiple headline and description options
+- **Background generation:** Replace or enhance backgrounds
+
+**Important:** Ads using Meta's generative AI will include AI info labels
+
+### Ad Sources
+- Add catalog items
+- Add website URLs
+- Enhance with dynamic content (site links, product info)
+
+---
+
+## Final Steps
+
+### Preview
+1. Toggle on **Ad preview**
+2. Check different placements using thumbnails
+3. Review how ad appears across platforms
+
+### Publish
+- **Close** to save as draft
+- **Publish** to go live
+
+**Note:** Before publishing, review:
+- Meta Terms of Service
+- Commercial Terms
+- Self-Serve Ad Terms
+- Business Tools Terms
+- Advertising Standards
+
+---
+
+## Ad Review Process
+
+Before ads run on Facebook or Instagram:
+- Ads are reviewed against **Meta Advertising Standards**
+- Review happens automatically before ads begin
+- Check status in **Delivery column** of Ads Manager
+
+---
+
+## Quick Checklist
+
+### ✅ Campaign Level
+- [ ] Choose buying type (Auction/Reservation)
+- [ ] Select objective
+- [ ] Name campaign
+- [ ] Set special ad category (if applicable)
+- [ ] Set campaign or ad set budget
+
+### ✅ Ad Set Level
+- [ ] Name ad set
+- [ ] Set conversion location/app
+- [ ] Choose performance goal
+- [ ] Set budget and schedule
+- [ ] Define audience
+- [ ] Choose placements
+
+### ✅ Ad Level
+- [ ] Name ad
+- [ ] Select identity (Page/IG account)
+- [ ] Choose ad format
+- [ ] Add creative (media, text, CTA)
+- [ ] Add enhancements (optional)
+- [ ] Preview ad
+- [ ] Publish or save
+
+---
+
+## Related Articles
+
+- Duplicate ads: /business/help/209669919072999
+- Create ad with existing campaign: /business/help/728466334381303
+- Edit an ad: /business/help/2169779963333459
+- Turn ad on/off: /business/help/172764286113080
+- Ads in review: /business/help/204798856225114
+
+---
+
+*Source: https://web.facebook.com/business/help/621956575422138*

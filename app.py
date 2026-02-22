@@ -387,9 +387,9 @@ Be brutally honest. The goal is to help improve conversion rates.
 
 Format your response with clear sections and emoji headers."""
                 
-                # Call vision API
+                # Call vision API (llava for image analysis)
                 response = client.chat.completions.create(
-                    model="llama-3.2-11b-vision-preview",
+                    model="llava-v1.5-7b-4096-preview",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {
@@ -424,8 +424,8 @@ Format your response with clear sections and emoji headers."""
                 
             except Exception as e:
                 st.error(f"Analysis error: {str(e)}")
-                if "model" in str(e).lower():
-                    st.info("💡 Vision model may require a different API setup. Try using Llama 4 models.")
+                if "model" in str(e).lower() or "decommissioned" in str(e).lower():
+                    st.info("💡 Vision model issue. Check Groq API status or try again later.")
     
     # Footer
     st.markdown("---")

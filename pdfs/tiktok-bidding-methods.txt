@@ -1,0 +1,75 @@
+# Bidding Methods | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Bidding methods are useful to fine tune your campaign to best fit your marketing goals. TikTok's auction ranks ads based on bid price and the relevance an ad might have to people. A strong bid can help you increase reach for your ads and maximize the volume of conversions you intend to drive on TikTok.
+
+---
+
+## Four Bidding Methods
+
+### 1. CPM (Cost Per Mille/Thousand Impressions)
+- **What it is:** Price you pay for 1,000 impressions
+- **Billing:** Charged by impression
+- **Applicable Objectives:** Reach
+
+---
+
+### 2. oCPM (Optimized CPM)
+- **What it is:** Price to create 1,000 impressions by selecting people who are likely to take an action
+- **Billing:** Charged by impression
+- **Default for:** Conversions and App Install objectives
+- **Applicable Objectives:**
+  - Shop purchases
+  - Product sales
+  - Conversions
+  - App install
+  - Lead generation
+  - Community interaction, follows
+
+---
+
+### 3. CPV (Cost Per View)
+- **What it is:** Price when ONE of these happens FIRST:
+  - Someone views your ad for at least 6 seconds
+  - Someone using accelerated view views your ad of an original length of at least 6 seconds
+  - Someone interacts with your ad within the first 6 seconds
+- **Billing:** Charged per focused view
+- **Applicable Objectives:** Video views
+
+---
+
+### 4. CPC (Cost Per Click)
+- **What it is:** Price per click
+- **Delivery:** Ads delivered to people most likely to click
+- **Billing:** Charged by click
+- **Applicable Objectives:**
+  - Shop purchases
+  - Product sales
+  - Traffic
+  - Conversions
+  - App install
+  - Community interaction, profile visits
+
+---
+
+## Quick Reference Table
+
+| Method | Calculation | Billing | Objectives |
+|--------|-------------|---------|------------|
+| **CPM** | Total cost ÷ impressions × 1,000 | Impression | Reach |
+| **oCPM** | Total cost ÷ impressions × 1,000 | Impression | Shop, Sales, Conversions, App Install, Leads, Community |
+| **CPV** | Total cost ÷ focused views | 6s view or interaction | Video Views |
+| **CPC** | Total cost ÷ clicks | Click | Shop, Sales, Traffic, Conversions, App Install, Community |
+
+---
+
+## Related Articles
+
+- Create ad group: https://ads.tiktok.com/help/article/create-ad-group?lang=en
+- TikTok Ads Manager intro: https://ads.tiktok.com/help/article/tiktok-ads-manager-intro?lang=en
+
+---
+
+*Source: https://ads.tiktok.com/help/article/bidding-methods?lang=en*

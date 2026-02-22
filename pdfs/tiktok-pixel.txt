@@ -1,0 +1,90 @@
+# About TikTok Pixel | TikTok Ads Manager
+## Official Documentation
+
+---
+
+TikTok Pixel is a piece of code that you can place on your website that allows you to share website events with TikTok. The Pixel can be used with any TikTok for Business tools to:
+
+1. **Measure traffic** on your website
+2. **Measure ad campaign performance**
+3. **Optimize campaigns** and find new customers
+
+---
+
+## How It Works
+
+Once you've successfully set up and verified the pixel on your site, it will share information on when an action is taken on your website, based on the events you've set up.
+
+**Recommended:** Set up events that reflect a full customer journey:
+- Viewing a product details page
+- Adding an item to cart
+- Making a purchase
+
+---
+
+## Data Collected by Pixel
+
+The pixel collects information available via standard web browsers (like Chrome):
+
+| Data Type | Purpose |
+|-----------|---------|
+| **Ad/Event Information** | Which ad a person clicked on, event initiated |
+| **Timestamp** | When website actions took place |
+| **IP Address** | Geographic location of an event |
+| **User Agent** | Device make, model, OS, browser |
+| **Cookies** | Measurement, optimization, targeting |
+| **Metadata & Button Clicks** | Page metadata, microdata, performance, button clicks |
+
+### Cookies
+- **Third-party cookies:** ON by default
+- **First-party cookies:** Optional (but recommended)
+- **Best performance:** Pair first-party AND third-party cookies with Advanced Matching
+
+---
+
+## Recommended Setup
+
+### Full Customer Journey Events
+```
+Page View → View Content → Add to Cart → Initiate Checkout → Purchase
+```
+
+### Tools
+- **Events Manager:** https://ads.tiktok.com/help/article/about-tiktok-events-manager
+- **Pixel Helper:** https://ads.tiktok.com/help/article/tiktok-pixel-helper-2.0?lang=en
+  - View data being sent to TikTok
+  - Ensure alignment with data-sharing policies
+  - Check for sensitive data
+
+---
+
+## Privacy & Terms
+
+- **TikTok Business Product Terms:** https://ads.tiktok.com/i18n/official/policy/business-products-terms
+- **TikTok Privacy Policy:** https://www.tiktok.com/legal/privacy-policy?lang=en
+
+---
+
+## Quick Setup Checklist
+
+- [ ] Create pixel in TikTok Ads Manager
+- [ ] Install pixel code on website
+- [ ] Set up standard events (Page View, View Content, Add to Cart, Purchase)
+- [ ] Verify pixel with Pixel Helper
+- [ ] Enable Advanced Matching
+- [ ] Configure first-party cookies
+- [ ] Test events in Events Manager
+
+---
+
+## Related Articles
+
+- Get started with pixel: https://ads.tiktok.com/help/article/get-started-pixel
+- Standard events & parameters: https://ads.tiktok.com/help/article/standard-events-parameters?lang=en
+- Events Manager: https://ads.tiktok.com/help/article/about-tiktok-events-manager
+- Using cookies with TikTok Pixel: https://ads.tiktok.com/help/article?aid=10007540
+- Enhance data postback: https://ads.tiktok.com/help/article/enhance-data-postback-with-the-tiktok-pixel
+
+---
+
+*Source: https://ads.tiktok.com/help/article/tiktok-pixel?lang=en*

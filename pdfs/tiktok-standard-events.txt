@@ -1,0 +1,98 @@
+# Standard Events and Parameters | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Events are actions taken on your website (like adding to cart or purchasing) that can result from paid TikTok ads or organically.
+
+---
+
+## What Are Standard Events?
+
+- Actions with **predefined names** created by TikTok
+- Used for:
+  - Reporting
+  - Optimizing conversions
+  - Building audiences
+- Supported by Events API and TikTok Pixel
+
+---
+
+## Complete Standard Events List
+
+| Event | Description | Code | Objective |
+|-------|-------------|------|-----------|
+| **Add Payment Info** | Visitor adds payment info at checkout | `AddPaymentInfo` | Sales |
+| **Add to Cart** | Visitor adds item to cart | `AddToCart` | Sales |
+| **Add to Wishlist** | Visitor adds item to wishlist | `AddToWishlist` | Sales, Lead |
+| **Application Approval** | Application approved (loan, job, enrollment) | `ApplicationApproval` | Lead |
+| **Complete Registration** | Visitor signs up for account | `CompleteRegistration` | Lead |
+| **Contact** | Visitor contacts you | `Contact` | Lead |
+| **Customize Product** | Visitor customizes product | `CustomizeProduct` | Lead |
+| **Download** | Visitor downloads something | `Download` | Sales |
+| **Find Location** | Visitor looks for location | `FindLocation` | Lead |
+| **Initiate Checkout** | Visitor proceeds to checkout | `InitiateCheckout` | Sales |
+| **Purchase** | Visitor makes purchase | `Purchase` | Sales |
+| **Schedule** | Visitor schedules appointment | `Schedule` | Lead |
+| **Search** | Visitor searches | `Search` | Sales, Lead |
+| **Start Trial** | Customer begins free trial | `StartTrial` | Lead |
+| **Submit Application** | Application submitted (card, program, job) | `SubmitApplication` | Lead |
+| **Submit Form** | Visitor submits form | `SubmitForm` | Lead |
+| **Subscribe** | Visitor subscribes (follows, content, paid) | `Subscribe` | Sales, Lead |
+| **View Content** | Visitor views specific page | `ViewContent` | Sales, Lead |
+
+---
+
+## Recommended Parameters
+
+### For E-commerce Events
+| Parameter | Description | Events |
+|-----------|-------------|--------|
+| `content_type` | Type of content | Add to Cart, Purchase, View Content |
+| `content_ids` | Product IDs | Add to Cart, Purchase, View Content |
+| `currency` | Currency code | Add to Cart, Purchase |
+| `value` | Monetary value | Add to Cart, Purchase |
+| `quantity` | Number of items | Add to Cart, Purchase, View Content |
+| `description` | Product description | Add to Cart, Purchase, View Content |
+
+### For Search
+| Parameter | Description |
+|-----------|-------------|
+| `search_string` | Search query |
+
+---
+
+## Customer Journey Events
+
+```
+ViewContent → AddToCart → InitiateCheckout → AddPaymentInfo → Purchase
+     ↓
+   Subscribe / StartTrial
+```
+
+---
+
+## Privacy Compliance
+
+**Important:** Avoid sending sensitive data about visitors when setting up events.
+
+**Policies to follow:**
+- TikTok Advertising Policies
+- Anti-Discrimination Policy
+- Housing, Employment and Credit Policy
+
+**Non-compliant event names may be removed.**
+
+---
+
+## Example Implementation
+
+**Social Media Manager tracking:**
+- Set up "Add to Cart" event → Monitor cart additions
+- Set up "Purchase" event → Track successful purchases
+- Use data to optimize ad performance
+- Target the right audience
+
+---
+
+*Source: https://ads.tiktok.com/help/article/standard-events-parameters?lang=en*

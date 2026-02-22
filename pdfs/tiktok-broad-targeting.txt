@@ -1,0 +1,83 @@
+# About Broad Targeting | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Broad Targeting is an advertising approach that prioritizes reaching a wide range of potential audiences by setting the **minimum number of targeting constraints** on ads.
+
+---
+
+## What Is "Fairly Broad"?
+
+**Fairly Broad Audience:** Audiences that reach **80% or more** of a country's total user accounts in the Audience Estimator.
+
+---
+
+## Performance Stats
+
+| Metric | Broad vs Narrow |
+|--------|-----------------|
+| **Cost Per Action (CPA)** | **-15% lower** |
+| **Conversion Rates** | **+20% higher** |
+
+**Result:** Fairly Broad audiences OUTPERFORM narrower audiences on average.
+
+---
+
+## Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Reach new audiences** | Expand beyond known customers |
+| **Larger reach** | Access 80%+ of country's users |
+| **Dynamic optimization** | TikTok has freedom to optimize delivery |
+| **Better performance** | Lower CPA, higher conversions |
+
+---
+
+## Best Practices
+
+### ✅ DO
+- Set only **essential** targeting constraints
+- Let TikTok optimize delivery dynamically
+- Start broad, then test narrow if needed
+
+### ❌ DON'T
+- Restrict targeting settings unnecessarily
+- Add constraints unless product unsuitable for specific segment
+- Assume advanced targeting outperforms broad
+
+---
+
+## When to Use Broad Targeting
+
+| Scenario | Recommendation |
+|----------|----------------|
+| New campaigns | ✅ Start broad |
+| Limited data | ✅ Use broad |
+| General products | ✅ Broad targeting |
+| Niche products | ⚠️ Consider narrow |
+| Local business | ⚠️ Location-specific |
+
+---
+
+## Validation Approach
+
+1. **Start with broad targeting**
+2. Run for 2-3 weeks minimum
+3. Evaluate performance
+4. Test advanced targeting strategies
+5. **Compare:** Does narrow outperform broad?
+6. If not → Return to broad
+
+---
+
+## Quick Reference
+
+```
+Broad Targeting = Minimal Constraints = 80%+ Reach = Better Performance
+```
+
+---
+
+*Source: https://ads.tiktok.com/help/article/broad-targeting?lang=en*

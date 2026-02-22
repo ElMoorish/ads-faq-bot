@@ -1,0 +1,52 @@
+# About Custom Audiences | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Custom Audiences are a tailored targeting feature that enables advertisers to create audiences of known or engaged users using:
+
+- **File upload** (customer lists)
+- **Website activity** (pixel data)
+- **App activity**
+- **TikTok engagement**
+- **Audience activation partner**
+
+---
+
+## Requirements
+
+**Minimum:** 1,000 total matched users required to use in an ad group
+
+---
+
+## Use Cases
+
+| Use Case | Benefit |
+|----------|---------|
+| **Retargeting** | Target leads or past engagers, move them towards conversion |
+| **Optimize spend** | Exclude recent customers from campaigns |
+| **Prospecting** | Create lookalike audiences for new customer acquisition |
+
+---
+
+## Audience Size Estimation
+
+The 'Available Audience' size estimator displays realistic reach using a custom audience.
+
+**Factors include:**
+- User's opt-in status
+- Age
+- Location
+- Other eligibility factors
+
+Learn more: https://ads.tiktok.com/help/article/audience-size-estimation-overview
+
+---
+
+## Related
+
+- Lookalike Audiences: https://ads.tiktok.com/help/article?aid=6746381707865227270
+
+---
+
+*Source: https://ads.tiktok.com/help/article/custom-audiences?lang=en*

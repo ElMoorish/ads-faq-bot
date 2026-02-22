@@ -1,0 +1,182 @@
+# Meta Sales Objective: Complete Guide to Driving Conversions
+
+Source: Transcend Digital (2025)
+Last Updated: 2026-02-22
+
+---
+
+## Overview: ODAX Framework
+
+Meta's Outcome-Driven Ad Experiences (ODAX) reorganized campaign objectives into six core buckets:
+
+1. **Awareness** - Reaching people most likely to remember your brand
+2. **Traffic** - Sending people to a website or app
+3. **Engagement** - Boosting post interactions, video views, or messages
+4. **Leads** - Capturing email addresses or contact info
+5. **App Promotion** - Driving app installs and usage
+6. **Sales** - Getting purchases, sign-ups, or conversions
+
+**Key Stat**: Campaigns that match objectives to the right funnel stage can see up to **2X higher conversion rates** (Meta internal data).
+
+---
+
+## Know Your Business Goals
+
+Before running any campaign, ask: **What's the outcome I care about?**
+
+| Goal | Best Objective |
+|------|----------------|
+| Brand visibility | Awareness |
+| Customer acquisition & revenue | Sales |
+| Mobile app growth | App Promotion |
+
+**Common Mistake**: Choosing Traffic or Engagement thinking it will "warm up" audience—but unless algorithm is trained for conversions, you won't get desired outcomes.
+
+---
+
+## Why "Sales" Is the Best Objective for Conversions
+
+If your goal is purchases, the **Sales objective** is the best choice.
+
+### Why?
+- Optimizes toward **real conversion events**, not vanity metrics
+- Integrates with **Pixel and Conversion API** for deeper learning
+- Enables **Advantage+ Shopping Campaigns** and budget automation
+- Supports full-funnel targeting with dynamic creative and product catalogs
+
+Meta has spent years fine-tuning this objective. For eCommerce, lead generation, or subscription offers, Sales should be your default.
+
+---
+
+## Setting Up a Sales Campaign: Step-by-Step
+
+1. Start new campaign → Choose "Sales" as goal
+2. Define conversion event (Purchase, Add to Cart, Lead)
+3. Select budget type: Advantage+ Shopping, CBO, or ABO
+4. Choose audience targeting (broad, interest, or retargeting)
+5. Add creatives and placements
+6. Launch and let Meta optimize toward sales outcome
+
+**Pro Tip**: Don't skip event setup. If Meta can't track your sales actions, campaign will underperform—even with right objective.
+
+---
+
+## Event Tracking for Sales Campaigns
+
+**Optimizing for sales starts with tracking sales.** Without proper event tracking, Meta has no feedback loop to optimize against.
+
+### Two Main Tracking Tools
+
+#### Meta Pixel
+- Browser-based JavaScript snippet
+- Tracks: PageView, AddToCart, Purchase
+- Sends data to Meta in real time
+
+#### Conversion API (CAPI)
+- Server-side method of sending event data
+- Works alongside Pixel
+- More robust post-iOS 14
+
+**Why Both Matter**: Combining Pixel + CAPI gives Meta complete view of customer actions—browser-side AND server-side. Results in more reliable optimization and better attribution.
+
+---
+
+## Budget Strategy for Sales Success
+
+Your budget strategy plays a huge role in sales performance.
+
+### Sufficient Budget Matters
+
+**Two critical requirements**:
+
+1. **Exit the Learning Phase**
+   - Meta requires ~50 optimization events (purchases, add-to-carts) within 7-day window
+   - If budget too low to generate volume → stuck in learning phase
+   - Results in unstable performance and poor efficiency
+
+2. **Compete in the Ad Auction**
+   - Meta dynamically bids for impressions based on objective, targeting, budget
+   - Budget too low = bids not competitive
+   - Won't win high-quality impressions
+
+### CBO vs ABO
+
+| Feature | CBO (Campaign Budget Optimization) | ABO (Ad Set Budget Optimization) |
+|---------|-----------------------------------|----------------------------------|
+| Control | Meta distributes budget across ad sets | You set budgets per ad set |
+| Best For | Scaling, broad testing | Testing specific audiences |
+| Automation | High | Low |
+| Flexibility | Medium | High |
+
+**Recommendation**: Use CBO for scale, ABO for testing.
+
+---
+
+## Targeting Strategies for Sales
+
+### Broad Targeting
+- Let Meta's algorithm find your buyers
+- Works well with strong creative and proper tracking
+- Advantage+ uses this by default
+
+### Interest-Based Targeting
+- Layer 2-3 relevant interests
+- Good for testing new audiences
+- Don't over-narrow (limits reach)
+
+### Retargeting
+- Target users who visited site but didn't purchase
+- Most efficient for ROAS
+- Requires Pixel data and custom audiences
+
+---
+
+## Creative Best Practices for Sales
+
+- **Lead with the offer** (discount, free shipping, urgency)
+- **Show the product** in action
+- **Use video** when possible (demonstrates value)
+- **Test multiple variations** (Advantage+ does this automatically)
+- **Clear CTA**: "Shop Now", "Buy Now", "Claim Offer"
+
+---
+
+## Key Metrics to Track for Sales Campaigns
+
+| Metric | What It Tells You |
+|--------|-------------------|
+| **ROAS** | Revenue generated per dollar spent |
+| **CPA** | Cost to acquire each customer |
+| **Conversion Rate** | % of clicks that convert |
+| **CPM** | Cost efficiency of reach |
+| **Add to Cart Rate** | Interest level in products |
+| **Purchase ROAS** | True revenue efficiency |
+
+---
+
+## Common Sales Campaign Mistakes
+
+1. **Wrong conversion event** - Optimizing for Add to Cart when you want Purchases
+2. **Insufficient budget** - Not enough to exit learning phase
+3. **Poor event tracking** - Pixel/CAPI not firing correctly
+4. **Over-targeting** - Narrowing audience too much
+5. **Weak creative** - Not compelling enough to drive action
+6. **Ignoring attribution** - Not understanding true customer journey
+
+---
+
+## Quick Checklist: Sales Campaign Setup
+
+- [ ] Sales objective selected
+- [ ] Conversion event defined (Purchase preferred)
+- [ ] Pixel + CAPI installed and tested
+- [ ] Sufficient budget for 50+ events/week
+- [ ] Audience defined (broad or retargeting)
+- [ ] Multiple creatives uploaded
+- [ ] CTA button set to "Shop Now" or similar
+- [ ] UTM tracking in place
+- [ ] Daily monitoring for first 7 days
+
+---
+
+*Source: Transcend Digital - Facebook Sales Objective Complete Guide (2025)*

@@ -1,0 +1,87 @@
+# About GMV Max Campaigns | TikTok Ads Manager
+## Official Documentation
+
+---
+
+GMV Max is an automated ad campaign type that optimizes for **total channel ROI** for your TikTok Shop.
+
+---
+
+## Campaign Types
+
+| Type | Purpose | Best For |
+|------|---------|----------|
+| **Product GMV Max** | Auto-select products, creatives, placements for sales | E-commerce, product sales |
+| **LIVE GMV Max** | Optimize liveroom traffic for highest revenue | Live sellers, TikTok Shop LIVE |
+
+---
+
+## Key Features
+
+### 1. Maximize Your GMV
+- Automate ad creative selection
+- Automate audience settings
+- Automate placement options
+- Uses signals from both organic AND paid traffic
+
+### 2. Optimize Your Ad Budget
+- Choose your ROI target
+- Campaign automatically spends within target's range
+
+### 3. Product-Generated Creative
+- Use existing product descriptions
+- Use product videos
+- Use product listings
+- Auto-generate content for ads
+
+### 4. Simplified Campaign Creation
+- Create in TikTok Ads Manager
+- Manage permissions
+- Add content for Spark Ads
+- Familiar interface
+
+---
+
+## How It Works
+
+```
+Your Products → GMV Max → Auto Optimization → Maximum ROI
+                    ↓
+         ┌─────────────────────┐
+         │ • Creative selection │
+         │ • Audience targeting │
+         │ • Placement choice   │
+         │ • Budget allocation  │
+         └─────────────────────┘
+```
+
+---
+
+## Requirements
+
+- TikTok Shop account
+- Product catalog/listings
+- Creative assets (optional - can use product content)
+
+---
+
+## Quick Setup
+
+1. Go to TikTok Ads Manager
+2. Create new campaign
+3. Select GMV Max objective
+4. Choose Product or LIVE GMV Max
+5. Set ROI target
+6. Add products/liveroom
+7. Launch
+
+---
+
+## Related Articles
+
+- Create Product GMV Max: https://ads.tiktok.com/help/article/how-to-create-a-product-gmv-max-campaign-in-tiktok-ads-manager
+- Create LIVE GMV Max: https://ads.tiktok.com/help/article/how-to-create-a-live-gmv-max-campaign-in-tiktok-ads-manager
+
+---
+
+*Source: https://ads.tiktok.com/help/article/about-gmv-max-campaigns-in-tiktok-ads-manager?lang=en*

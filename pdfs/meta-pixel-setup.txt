@@ -1,0 +1,146 @@
+# Set Up and Install the Meta Pixel
+## Meta Business Help Center
+
+---
+
+This article covers how to set up a Meta pixel on your website.
+
+---
+
+## Overview
+
+Setting up a pixel involves two steps:
+
+1. **Create your pixel** in Events Manager and set up the base code on your website
+2. **Set up events** on your website to measure actions such as making a purchase
+
+---
+
+## Requirements
+
+- ✅ Business website or app
+- ✅ Ability to update website code or tag manager (for manual setup)
+
+---
+
+## Setup Process
+
+### Step 1: Create Pixel
+
+1. Go to **Meta Events Manager**: https://web.facebook.com/events_manager2/
+2. Click **Connect data** → Select **Web**
+3. Click **Connect**
+4. Enter pixel name → Click **Create pixel**
+5. A new pixel ID is created (viewable in Events Manager)
+
+### Step 2: Check Partner Integration
+
+**If you have a website:**
+- Enter website URL → Click **Check**
+- If partner integration available → Click **Next** and follow instructions
+- If no partner integration → Click **Next**
+
+**If you don't have a website:**
+- Check "I don't have a website" → Click **Continue**
+
+### Step 3: Choose Setup Method
+
+| Option | Best For |
+|--------|----------|
+| **Get guidance** | Recommended - Setup recommendations |
+| **Do it yourself** | Already know how to connect data |
+
+---
+
+## Setup Options
+
+### Option A: Conversions API + Meta Pixel (Recommended)
+
+Choose how to set up:
+
+| Method | Description | Difficulty |
+|--------|-------------|------------|
+| **Partner integration** | Connect via partner platform | Easiest |
+| **Conversions API Gateway** | Use Meta's gateway service | Medium |
+| **Set up manually** | Add code yourself | Advanced |
+
+**Manual setup options:**
+- Create personalized instructions
+- Send instructions to developer
+
+### Option B: Meta Pixel Only
+
+Choose how to install:
+
+| Method | Description |
+|--------|-------------|
+| **Install code manually** | Add pixel code to website |
+| **Check for partner** | Use partner integration |
+| **Email instructions** | Send to developer |
+
+---
+
+## After Setup
+
+1. **Verify pixel is working:** https://web.facebook.com/business/help/218844828315224
+2. **Add people to pixel:** https://web.facebook.com/business/help/279059996069252
+
+---
+
+## Conversions API (Recommended)
+
+If you share events with Meta using your pixel, we also recommend using the **Conversions API**.
+
+**Benefits:**
+- Improves performance of Meta ad campaigns
+- Better measurement
+- Works with your Meta pixel
+
+Learn more: https://web.facebook.com/business/help/2041148702652965
+
+---
+
+## Quick Setup Checklist
+
+### ✅ Create Pixel
+- [ ] Go to Events Manager
+- [ ] Click Connect data → Web
+- [ ] Name your pixel
+- [ ] Create pixel ID
+
+### ✅ Install Pixel
+- [ ] Check for partner integration
+- [ ] Choose setup method (API + Pixel or Pixel only)
+- [ ] Add code to website OR use partner
+
+### ✅ Set Up Events
+- [ ] Define events to track (purchase, add to cart, etc.)
+- [ ] Configure event parameters
+- [ ] Test events
+
+### ✅ Verify
+- [ ] Check pixel is working
+- [ ] Add team members
+- [ ] Connect to ad account
+
+---
+
+## Help Resources
+
+- **Meta Technical Pro:** Schedule a call for step-by-step guidance
+  - https://web.facebook.com/business/meta-pro-team/technical-pro
+- **Meta Pixel Helper:** Browser extension to verify pixel
+- **Test Events Tool:** Verify events in Events Manager
+
+---
+
+## Related Articles
+
+- About the Meta pixel: https://web.facebook.com/business/help/742478679120153
+- About the Meta Pixel Helper: https://web.facebook.com/business/help/198406697184603
+- About the Conversions API: https://web.facebook.com/business/help/2041148702652965
+- Meta pixel for developers: https://developers.facebook.com/docs/facebook-pixel
+
+---
+
+*Source: https://web.facebook.com/business/help/952192354843755*

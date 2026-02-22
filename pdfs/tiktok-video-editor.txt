@@ -1,0 +1,81 @@
+# About TikTok Ads Manager Video Editor
+## Official Documentation
+
+---
+
+The TikTok Ads Manager Video Editor is an advanced editing solution tailored for advertisers found within TikTok Ads Manager. This editor helps advertisers efficiently enhance ad performance right within TikTok Ads Manager's ad creation process.
+
+---
+
+## Key Features
+
+### 1. AI-Assisted Narration
+- On-screen narration of your video script
+- Add a visual avatar
+- Customizable options
+- Enriches storytelling
+- Improves viewer engagement
+
+**Learn more:**
+- Generate voiceovers: https://ads.tiktok.com/help/article/how-to-generate-voiceovers-with-tiktok-video-editor
+- Create avatars: https://ads.tiktok.com/help/article/how-to-create-avatars-with-tiktok-video-editor
+
+---
+
+### 2. Multilingual Video Adaptation
+- Translation features
+- Caption features
+- Localize videos into multiple languages
+- Broadens reach
+- Enhances accessibility for international viewers
+
+**Learn more:** https://ads.tiktok.com/help/article/how-to-generate-captions-with-tiktok-video-editor
+
+---
+
+### 3. Tailored TikTok Content Enhancements
+
+Adapt videos to match TikTok's unique style and trends:
+
+| Feature | Description | Learn More |
+|---------|-------------|------------|
+| **Music** | Add music to enhance mood and impact | https://ads.tiktok.com/help/article/how-to-add-music-with-tiktok-video-editor |
+| **Stickers** | Visual tweaks for engagement | https://ads.tiktok.com/help/article/how-to-add-effects-with-tiktok-video-editor |
+| **Effects** | Aesthetic appeal | https://ads.tiktok.com/help/article/how-to-add-effects-with-tiktok-video-editor |
+| **Transitions** | Connect video parts seamlessly | https://ads.tiktok.com/help/article/how-to-add-transitions-with-tiktok-video-editor |
+
+---
+
+### 4. Seamless Publishing
+
+- Create
+- Edit
+- Add enhancements
+- Publish
+
+**All within TikTok Ads Manager's ad creation process**
+
+---
+
+## Quick Feature Summary
+
+| Feature | Benefit |
+|---------|---------|
+| AI Narration | Engage viewers with voice + avatar |
+| Translation | Reach international audiences |
+| Captions | Accessibility + silent viewing |
+| Music | Mood + emotional impact |
+| Stickers | Visual engagement |
+| Effects | Professional aesthetics |
+| Transitions | Smooth video flow |
+
+---
+
+## Note
+
+If editing personal TikTok videos without Ads Manager:
+- See: https://support.tiktok.com/en/using-tiktok/creating-videos/editing-tiktok-videos-and-photos
+
+---
+
+*Source: https://ads.tiktok.com/help/article/about-tiktok-video-editor?lang=en*

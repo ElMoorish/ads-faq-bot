@@ -1,0 +1,82 @@
+# Budget Best Practices | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Your ad budget can make up a large portion of your marketing spending. Use these tips to help you consider the best budget and strategy when you set up a campaign.
+
+---
+
+## Key Budget Tips
+
+### 1. Campaign Budget
+- ✅ **Leave it open initially** (don't set a hard cap right away)
+
+### 2. Ad Group Budget
+- ✅ **Use daily budget** instead of lifetime budget
+- **Why:** Better control and pacing
+
+---
+
+## Minimum Budget Recommendations
+
+| Event Type | Optimization | Minimum Budget |
+|------------|--------------|----------------|
+| No "Current CPA" | Not Conversions, any high funnel event | 50 × current CPA/CPR OR $100 |
+| Conversions | Shallow Conversion (Page View, etc.) | 50 × current CPA/CPR OR $100 |
+| Conversions | Install Campaign | 20 × current CPA OR $200 |
+| Conversions | Deep Conversion (Add to Cart, Purchase) | 10 × current CPA OR $200 |
+
+---
+
+## Learning Phase Rules
+
+### During Learning Phase (Conversions Campaign)
+- ❌ **DO NOT** change targeting
+- ❌ **DO NOT** change bid
+- ❌ **DO NOT** change budget
+- ⏳ Wait for learning phase to complete
+
+### After Learning Phase
+- ✅ Keep budget within **50% range** of previous budget
+- ✅ Wait **at least 2 days** between changes
+- ✅ Allow campaign time to adjust
+
+---
+
+## Maximum Delivery Notes
+
+If you set up or change a Maximum Delivery bid strategy in the middle of the day:
+- ⚠️ There might be a spending discount
+- Based on actual remaining effective hours of delivery
+
+---
+
+## Quick Checklist
+
+### ✅ Setup Phase
+- [ ] Leave campaign budget open initially
+- [ ] Use daily budget for ad groups
+- [ ] Set minimum budget based on optimization type
+
+### ✅ Learning Phase
+- [ ] No targeting changes
+- [ ] No bid changes
+- [ ] No budget changes
+- [ ] Wait for completion
+
+### ✅ Post-Learning
+- [ ] Changes within 50% of previous budget
+- [ ] Wait 2+ days between changes
+- [ ] Monitor performance
+
+---
+
+## Related Articles
+
+- Campaign setup: https://ads.tiktok.com/help/article/campaign-set-up?lang=en
+- Learning phase: https://ads.tiktok.com/help/article?aid=753878599824290203&q=learning
+
+---
+
+*Source: https://ads.tiktok.com/help/article/budget-best-practices*

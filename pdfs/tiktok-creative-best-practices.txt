@@ -1,0 +1,158 @@
+# Creative Best Practices for Performance Ads
+## TikTok Ads Official Documentation
+
+**Last Updated:** June 2025
+
+---
+
+Creative is an important consideration when building high-performing ads. You don't have to be a marketing guru or video editing expert to produce ads that capture your audience's attention. The following recommendations are general best practices that have worked well for advertisers.
+
+---
+
+## 1. TikTok First
+
+Creatives perform best when they are made for TikTok and when they leverage the power of the platform.
+
+### Technical Basics
+- ✅ Use sound/music
+- ✅ Vertical orientation (9:16)
+- ✅ At least 720P resolution
+- ✅ Keep content within UI safe zone (see ad specifications)
+
+### Content Guidelines
+- **Feature people:** Creators, employees, or customers to capture attention and increase engagement
+- **DIY aesthetic:** Go for a not overly polished style so it fits with user-generated content on TikTok
+- **Lean into trends:** Make ads feel relevant and engaging. Users like when brands use trends, memes, or challenges
+
+### Resources
+- **Creative Center:** http://ads.tiktok.com/business/creativecenter
+- **Ad Inspiration:** https://ads.tiktok.com/business/creativecenter/inspiration/topads/pc/en
+- **Trending Hashtags:** https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en
+- **Creative Insights:** https://ads.tiktok.com/business/creativecenter/creative-pattern/pc/en
+- **Commercial Music Library:** https://ads.tiktok.com/business/creativecenter/music/pc/en
+
+---
+
+## 2. Reel Them In
+
+Follow well-proven content structures that sell: Have a hook, highlight your unique selling points, and end with a clear call-to-action.
+
+### Hook Strategy
+| Timing | Action | Purpose |
+|--------|--------|---------|
+| First 3 seconds | Introduce content proposition | Better recall and awareness |
+| First 6 seconds | Prioritize hook | Boost engagement, increase watch time |
+
+**Hook Techniques:**
+- Create suspense
+- Create surprise
+- Evoke other emotions
+
+### Content Elements
+- **Captions/text overlays:** Provide context to your ad
+  - Recommended: 5-10 words per second when using text
+- **Transitions:** Use to retain engagement and view time
+- **Stickers:** Keep viewers engaged
+- **Graphics:** Visual interest
+- **Strong CTA:** Guide your audience on what to think, feel, or do
+
+### Quick Start
+- **Symphony Assistant:** https://ads.tiktok.com/help/article/about-tiktok-creative-assistant
+  - Get suggestions and script generations for your next TikTok ad
+
+---
+
+## 3. Set Up for Success
+
+Give your campaign more ad delivery and optimization options with diversified ad groups and different creatives.
+
+### Recommended Structure
+| Element | Count | Purpose |
+|---------|-------|---------|
+| Creatives per ad group | 3-5 | Testing & optimization |
+| Ad groups per campaign | 3-5 | Diversified targeting |
+
+**Key Rule:** Use creatives with BIG differences, especially when testing. This is helpful during the ad group's exploration stage.
+
+### Creative Development Tools
+- **Creative Tools and Templates:** https://ads.tiktok.com/business/creativecenter/tools/pc/en
+- **TikTok Creative Exchange:** https://ads.tiktok.com/creativeexchange
+- **TikTok One:** https://ads.tiktok.com/creative/
+
+---
+
+## 4. Evaluate and Optimize
+
+Combat creative fatigue and proactively address any potential issues with your ads.
+
+### Performance Monitoring
+Check ad performance regularly. Refresh ad group creatives when:
+- ❌ Delivery results show consistently declining trend
+- ❌ Daily new users are low
+
+### Refresh Strategy
+When refreshing creatives:
+- ✅ Add NEW creatives to existing ad group
+- ❌ Don't create new ad group
+- **Why:** Extends ad group lifetime
+
+### Best Practices
+- Maintain a library of creative assets for quick refreshes
+- Use creative tools to efficiently design new creatives
+
+### Automation Options
+- **Smart Creative:** https://ads.tiktok.com/help/article/smart-creative?lang=en
+  - Hands-off approach to managing creative fatigue
+- **Video Insights:** https://ads.tiktok.com/help/article/video-insights
+  - Analyze video creative performance
+
+---
+
+## Quick Reference Checklist
+
+### ✅ TikTok First
+- [ ] Sound/music included
+- [ ] Vertical 9:16 format
+- [ ] 720P+ resolution
+- [ ] Within safe zone
+- [ ] Features people
+- [ ] DIY aesthetic (not over-polished)
+- [ ] Leverages trends
+
+### ✅ Content Structure
+- [ ] Hook in first 3-6 seconds
+- [ ] Clear USP highlighted
+- [ ] Text overlays (5-10 words/sec)
+- [ ] Transitions/stickers/graphics
+- [ ] Strong CTA at end
+
+### ✅ Campaign Setup
+- [ ] 3-5 creatives per ad group
+- [ ] 3-5 diversified ad groups per campaign
+- [ ] Big creative differences for testing
+
+### ✅ Optimization
+- [ ] Regular performance checks
+- [ ] Refresh creatives when declining
+- [ ] Add NEW creatives to existing ad groups
+- [ ] Maintain creative asset library
+
+---
+
+## Learn More
+
+**TikTok Creative Learning Path:** https://www.tiktokacademy.com/student/collection/2639680-become-a-creative-expert
+
+Step-by-step guidance on planning, producing, and optimizing ads that perform — from idea to iteration.
+
+---
+
+## Related Articles
+
+- About Creative Center
+- About the Commercial Music Library
+- About Top Ads
+
+---
+
+*Source: https://ads.tiktok.com/help/article/creative-best-practices?lang=en*

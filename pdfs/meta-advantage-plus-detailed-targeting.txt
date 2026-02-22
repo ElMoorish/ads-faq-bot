@@ -1,0 +1,88 @@
+# About Advantage+ Detailed Targeting | Meta Ads
+## Meta Business Help Center
+
+---
+
+**Important Update:** Detailed targeting exclusions have been removed. You can't use them in new ad sets any more. Removed from active campaigns on March 31, 2025.
+
+---
+
+## What Is Advantage+ Detailed Targeting?
+
+Meta Advantage+ detailed targeting helps improve campaign performance by allowing the system to reach a **broader group of people** than you defined in your detailed targeting selections.
+
+---
+
+## How It Works
+
+1. System looks for better performance opportunities outside your defined audience
+2. If found, dynamically expands audience to reflect better performance
+3. May expand further to include similar opportunities
+4. Shows ad to additional people likely to get more/cheaper results
+
+---
+
+## Key Points
+
+### What It Affects
+- ✅ Detailed targeting (interests, behaviors)
+- ✅ Audience expansion for better performance
+
+### What It Does NOT Affect
+- ❌ Location targeting
+- ❌ Age targeting
+- ❌ Gender targeting
+- ❌ Language targeting
+
+**These continue to apply as set.**
+
+---
+
+## Availability
+
+| Campaign Type | Available |
+|---------------|-----------|
+| Regular campaigns | ✅ Yes |
+| Social issues, elections, politics | ❌ No |
+
+---
+
+## Important Notes
+
+- Estimated audience size won't reflect total expanded audience
+- Advertising Standards prohibiting wrongful discrimination still apply
+- Targeting options limited for audiences under 18
+
+---
+
+## Related Features
+
+| Feature | Description |
+|---------|-------------|
+| **Advantage+ audience** | AI-optimized audience selection |
+| **Advantage+ lookalike** | AI-optimized lookalike audiences |
+| **Advantage+ custom audience** | AI-optimized custom audiences |
+| **Suggestions** | Targeting recommendations |
+
+---
+
+## Quick Reference
+
+```
+Your Targeting → Advantage+ → Expands If Better Performance Found
+                     ↓
+              (Keeps Age, Gender, Location intact)
+```
+
+---
+
+## Related Articles
+
+- About detailed targeting: https://www.facebook.com/help/182371508761821
+- About Advantage+ audience: https://www.facebook.com/help/273363992030035
+- About Advantage+ lookalike: https://web.facebook.com/business/help/1212225059146059
+- About custom audiences: https://web.facebook.com/business/help/744354708981227
+
+---
+
+*Source: https://web.facebook.com/business/help/128066880933676*

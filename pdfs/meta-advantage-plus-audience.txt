@@ -1,0 +1,112 @@
+# About Advantage+ Audience | Meta Ads
+## Meta Business Help Center
+
+---
+
+Meta Advantage+ audience lets you use Meta's advanced AI to find your campaign audience. It can be the **easiest to use and best-performing** Advantage+ audience automation option yet.
+
+---
+
+## Performance Improvements
+
+| Objective | Cost Per Result Improvement |
+|-----------|----------------------------|
+| **Awareness** | **-14.8%** lower |
+| **Traffic, Engagement, Leads** | **-9.7%** lower |
+| **Sales, App Promotion** | **-7.2%** lower |
+
+---
+
+## How Advantage+ Audience Works
+
+Meta's AI uses numerous pieces of information to find your audience:
+
+| Signal | Description |
+|--------|-------------|
+| **Past conversions** | Who converted before |
+| **Meta pixel data** | Website behavior |
+| **Ad interactions** | How people engaged with previous ads |
+| **Millions of signals** | Constantly learning and evolving |
+
+**Latest model innovations** analyze millions of signals to find the right message, for the right audience, at the right time.
+
+---
+
+## How Suggestions Work
+
+1. Meta's AI finds your audience OR
+2. Adds information as an **audience suggestion**
+3. Shows ads to people matching suggestion AND other audiences
+4. Expands when likely to improve performance
+
+---
+
+## When to Use Advantage+ Audience
+
+### ✅ Recommended
+- Almost all campaign types
+- Sales, Lead, App promotion objectives
+- When you want AI to find your audience
+
+### ❌ NOT Recommended
+- Remarketing campaigns
+
+---
+
+## For Sales, Lead, App Promotion Objectives
+
+**Better option:** **Advantage+ campaigns**
+
+- More complete campaign solution
+- Applies AI across many steps
+- Full automation
+
+**Alternative:** Advantage+ audience
+- AI finds audience
+- You still control other settings
+
+---
+
+## Testing Best Practice
+
+Use **A/B testing** to compare Advantage+ audience against other audience selections.
+
+**Important:** This is the only reliable way to compare two audience sets.
+
+---
+
+## Limitations
+
+- Cannot select ages under 18 (or older in some countries)
+- Not for remarketing campaigns
+
+---
+
+## Opportunity Score
+
+When eligible, you get Advantage+ audience recommendations in **opportunity score**.
+
+- Tool to identify and prioritize effective campaign recommendations
+- Near real-time feedback
+
+**Note:** Opportunity score does NOT guarantee performance.
+
+---
+
+## Quick Reference
+
+```
+Advantage+ Audience = AI Finds Your Audience = Lower Costs = Better Performance
+```
+
+---
+
+## Related Articles
+
+- Create campaign with Advantage+ audience: https://www.facebook.com/help/793748385630490
+- About suggestions: https://www.facebook.com/help/938372127764391
+- Audience controls and value rules: https://www.facebook.com/help/2016171032241412
+
+---
+
+*Source: https://web.facebook.com/business/help/273363992030035*

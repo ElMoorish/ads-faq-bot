@@ -1,0 +1,102 @@
+# Best Practices for Targeting
+## TikTok Ads Official Documentation
+
+**Last Updated:** September 2025
+
+---
+
+Targeting is one of the key aspects of any marketing strategies and one of the most important components of any campaign setup as well as success. Targeting can be selected during the ad group creation process.
+
+---
+
+## Key Targeting Strategies
+
+### 1. Smart+ Campaigns
+If you set your campaign setup to Smart+ campaign, based on what you provide, then Smart+ Campaigns will assist you in automatically selecting the best targeting settings for you.
+
+**Learn more:** https://ads.tiktok.com/help/article/about-smart-plus-campaign
+
+---
+
+### 2. Broad Targeting (RECOMMENDED)
+
+Start with a broad audience. Ads in TikTok Ads Manager that reach a "fairly broad" audience - defined as including over 80% of the potential users in a given country - tend to outperform all others by a wide margin.
+
+**Performance Stats:**
+- **-15% lower Cost per Action (CPA)** vs narrower audiences
+- **+20% higher conversion rates** on average
+
+**Additional Tips:**
+- Create custom and lookalike audiences to help drive results
+- Custom Audiences: https://ads.tiktok.com/help/article/custom-audiences
+- Lookalike Audiences: https://ads.tiktok.com/help/article/lookalike-audience
+
+**Learn more:** https://ads.tiktok.com/help/article/broad-targeting
+
+---
+
+### 3. Smart Targeting
+
+If you are using Audiences or Interests and Behavior targeting settings, enable Smart Targeting for the best results.
+
+**Benefits:**
+- Helps find users most likely to complete your objective (e.g., completing a payment)
+- Reduces Cost Per Acquisition (CPA)
+- Reduces ad fatigue for most advertisers
+
+**Learn more:** https://ads.tiktok.com/help/article/smart-targeting
+
+---
+
+### 4. Re-Target Audiences
+
+You can re-target audiences you've already targeted if you have your data connections setup. This helps you continue to drive your audience down the funnel.
+
+---
+
+### 5. Known Audiences
+
+You can target audiences known to work for your business by using:
+- **Demographic Targeting**
+- **Interest and Behavior Targeting**
+- **Custom Audiences**
+
+**Resources:**
+- Interest Targeting: https://ads.tiktok.com/help/article/interest-targeting
+- Behavior Targeting: https://ads.tiktok.com/help/article/behavior-targeting
+
+---
+
+### 6. Avoid Narrow Audience Size
+
+Setting your audience too narrow may cause Ad Groups difficulty exiting the learning phase, increasing the likelihood of creative fatigue.
+
+**Only consider narrow targeting if:**
+- Operating in a few zip codes
+- You have validated it through testing
+
+---
+
+## Summary Checklist
+
+| Strategy | When to Use | Priority |
+|----------|-------------|----------|
+| Broad Targeting | Default starting point | ⭐⭐⭐ HIGH |
+| Smart Targeting | Using Interests/Behaviors | ⭐⭐⭐ HIGH |
+| Smart+ Campaigns | Want full automation | ⭐⭐ MEDIUM |
+| Custom Audiences | Have customer data | ⭐⭐ MEDIUM |
+| Lookalike Audiences | Have pixel data | ⭐⭐ MEDIUM |
+| Re-Targeting | Have data connections | ⭐ LOW |
+| Narrow Targeting | Specific locations only | ⚠️ CAUTION |
+
+---
+
+## Related Articles
+
+- Best practices for Measurement
+- TikTok Ads Best Practices
+- Best practices for optimizing brand awareness and ad recall with TikTok's Brand Basics
+
+---
+
+*Source: https://ads.tiktok.com/help/article/best-practices-for-targeting?lang=en*

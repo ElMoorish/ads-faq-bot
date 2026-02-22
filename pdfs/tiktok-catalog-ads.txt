@@ -1,0 +1,64 @@
+# About Catalog Ads | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Catalog Ads are an ad solution that uses images, videos, and product information from your Catalog to create personalized ads.
+
+---
+
+## How It Works
+
+When someone sees your Catalog Ad:
+1. They can visit your website or Instant Page
+2. Learn more about products
+3. Make a purchase
+
+---
+
+## Availability
+
+**Objectives:** Sales objective for Website, App, or Smart+
+
+---
+
+## Key Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Enhanced personalization** | ML algorithms match most relevant products to users |
+| **Higher engagement** | Relevant products increase conversion likelihood |
+| **Smart+ Catalog Ads** | Automation + catalog = better CPA vs manual campaigns |
+
+---
+
+## Ad Formats
+
+| Format | Description | Best For |
+|--------|-------------|----------|
+| **Carousel** | Connect catalog directly to ad creative | Always-on sales, prospecting, retargeting |
+| **Single Video** | Upload/choose videos with interactive add-ons | Product showcases |
+| **Catalog Video** | Auto-present videos aligned with user interest | High engagement, relevance |
+
+---
+
+## Quick Setup
+
+1. Create/upload catalog in TikTok Ads Manager
+2. Set up data connections (product feed)
+3. Create Sales campaign
+4. Select Catalog Ad format
+5. Choose products to promote
+6. Launch
+
+---
+
+## Requirements
+
+- Product catalog with images/videos
+- Product information (descriptions, prices)
+- Data feed or API connection
+
+---
+
+*Source: https://ads.tiktok.com/help/article/about-catalog-ads-in-tiktok-ads-manager?lang=en*

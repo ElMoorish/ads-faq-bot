@@ -1,0 +1,67 @@
+# About App Event Optimization (AEO) | TikTok Ads Manager
+## Official Documentation
+
+---
+
+As the global app market matures, you may be thinking beyond the install event to maximize user **Life Time Value (LTV)** and **Return on Investment (ROI)**.
+
+AEO helps find people who will not only install but go on to trigger specific, valuable in-app events.
+
+---
+
+## Key Events to Optimize For
+
+| Event | Best For |
+|-------|----------|
+| **Purchase** | E-commerce, subscription apps |
+| **Subscribe** | Subscription services |
+| **Achieve Level** | Gaming apps |
+| **Add to Cart** | E-commerce |
+| **Complete Tutorial** | Gaming, productivity apps |
+
+---
+
+## How It Works
+
+1. Set key event you want to optimize for (e.g., Purchase)
+2. TikTok uses data insights to deliver ads
+3. Targets people who fit criteria AND show high disposition to complete event
+4. Control costs while maximizing valuable users
+
+---
+
+## Example Use Cases
+
+### Travel App
+**Problem:** High install volume but low customer LTV
+
+**Solution:** 
+- Set Purchase as key event
+- TikTok delivers to people with high disposition to purchase
+
+### Gaming App
+**Problem:** Need players who progress far
+
+**Solution:**
+- Select Achieve Level as key event
+- Find people likely to reach valuable levels
+
+---
+
+## Best Practices
+
+- Start with high-value events (Purchase, Subscribe)
+- Ensure sufficient event data (500+ conversions/month)
+- Use broad targeting to let algorithm optimize
+- Test multiple events in separate campaigns
+
+---
+
+## Related Articles
+
+- Best practices for App Event Optimization: https://ads.tiktok.com/help/article/best-practices-for-app-event-optimization
+- How to set up AEO campaign: https://ads.tiktok.com/help/article/how-to-set-up-an-app-event-optimization-campaign
+
+---
+
+*Source: https://ads.tiktok.com/help/article/app-event-optimization?lang=en*

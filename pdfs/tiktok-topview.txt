@@ -1,0 +1,135 @@
+# About TopView | TikTok Ads
+## Official Documentation
+
+---
+
+TopView is a video ad that is shown to users **upon opening TikTok**. Shown before any other TikTok video, TopView is a high-impact, full-screen, and sound-on video that showcases your brand.
+
+---
+
+## How TopView Works
+
+### The Experience
+
+1. **User opens TikTok**
+2. **First 3 seconds:** Full-screen video takeover (no UI elements)
+3. **After 3 seconds:** Transitions to in-feed video experience
+   - Icons appear
+   - Interaction elements appear
+
+---
+
+## Performance Stats
+
+| Metric | Result |
+|--------|--------|
+| **Brand recall** | 1.5x higher than other ad types |
+| **Likelihood to share** | 70% more likely vs other formats |
+| **Likelihood to click** | 68% more likely vs other formats |
+
+---
+
+## Key Features
+
+### Premium Position
+- **"Times Square billboard in a user's pocket"**
+- First video users see when opening TikTok
+- Maximum visibility and impact
+
+### Guaranteed Impressions
+- Impressions are **100% guaranteed**
+- "Own the day" by buying out TopView impressions
+- Reach vast numbers within 24-hour period
+
+### Buying Model
+- **CPM basis** (Cost Per Mille)
+- Customizable audience targeting
+- Minimum spend varies by market
+- Fixed rate (via sales rep) OR dynamic CPM (via Campaign Forecaster)
+
+---
+
+## Targeting Options
+
+| Category | Available |
+|----------|-----------|
+| **Gender** | ✅ Yes |
+| **Interest** | ✅ Yes |
+| **Language** | ✅ Yes |
+| **Operating System** | ✅ Yes |
+| **Age** | ✅ Yes |
+
+---
+
+## Interactive Add-Ons
+
+| Add-On | Description |
+|--------|-------------|
+| **Gesture** | Interactive gestures |
+| **Story Selection** | Choose-your-own-adventure |
+| **Shake Surprise** | TopView-exclusive format |
+| **Super Like** | Enhanced like interaction |
+
+---
+
+## Ad Formats Supported
+
+- ✅ Spark Ads
+- ✅ Non-Spark Ads
+
+---
+
+## Destinations
+
+TopView can link to:
+- Website (web-view page)
+- Hashtag page
+- Branded Effect
+- Account page
+- Video page
+- More internal TikTok pages
+
+---
+
+## Planning & Booking
+
+| Timeline | Action |
+|----------|--------|
+| **225 days out** | Check inventory availability |
+| **60+ days advance** | Book for 100% impression guarantee |
+| **First come, first serve** | All inventory |
+
+---
+
+## Availability
+
+- Currently only available to **qualified customers**
+- Contact your TikTok sales representative
+
+**Note:** Starting October 2025, TopView ad groups will default to TikTok Lite in Japan and Korea.
+
+---
+
+## Reach Predictability
+
+TopView provides estimated campaign reach and frequency range during planning stage.
+
+**Note:** Forecasted reach is an estimate, not guaranteed. Not available in the US.
+
+---
+
+## Ad Specifications
+
+Full specs: https://ads.tiktok.com/help/article/tiktok-reservation-topview
+
+---
+
+## Quick Reference
+
+```
+Open TikTok → TopView Ad = First Video Seen = Maximum Impact
+```
+
+---
+
+*Source: https://ads.tiktok.com/help/article/about-topview?lang=en*

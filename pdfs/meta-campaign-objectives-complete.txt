@@ -1,0 +1,324 @@
+# Meta Ads Campaign Objectives - Complete Guide
+
+Source: Factors.ai, MagicBrief, Bir.ch (2025-2026)
+Last Updated: 2026-02-22
+
+---
+
+## Overview: ODAX Framework
+
+Meta's Outcome-Driven Ad Experiences (ODAX) framework consolidated campaign objectives from 11 to 6 in 2025:
+
+1. **Awareness**
+2. **Traffic**
+3. **Engagement**
+4. **Leads**
+5. **App Promotion**
+6. **Sales**
+
+Each objective tells Meta's algorithm WHO to target based on their past behavior patterns.
+
+---
+
+## 1. AWARENESS (Top of Funnel)
+
+### Goal
+Introduce your brand to new audiences who are not yet familiar with your offering.
+
+### When to Use
+- New product launches
+- Category creation or rebranding
+- Building familiarity before performance campaigns
+- Entering new markets
+
+### Campaign Types
+- **Brand Awareness**: Increases ad recall among target audience
+- **Reach**: Maximizes unique people who see your ad
+
+### Optimizations Available
+- Impressions
+- Reach
+- Ad Recall Lift
+
+### Best Ad Formats
+- Video Ads (6-15 seconds)
+- Carousel Ads
+- Image Ads (strong visual hooks)
+- Story and Reel Ads
+
+### Placements
+- Instagram feed
+- Facebook feed
+- Audience Network
+
+### Key Metrics
+- Impressions
+- Reach
+- Ad Recall Lift
+
+### Pro Tips
+- Use eye-catching visuals and short videos
+- Pair with broad targeting to maximize reach
+- Retarget engaged users later for deeper funnel actions
+- Average engagement rate on Facebook: 0.063%
+- Photo albums: 0.15% engagement
+- Videos: 0.12% engagement
+
+---
+
+## 2. TRAFFIC (Top/Mid Funnel)
+
+### Goal
+Drive users to your website, landing page, or app.
+
+### When to Use
+- You want clicks, not sales (publishers, bloggers)
+- You monetize via display ads, affiliate links, or email capture
+- Your pixel is new and you need data before conversion campaigns
+- Building custom audiences for retargeting
+
+### Optimizations Available
+- Landing Page Views
+- Link Clicks
+- Impressions
+- Daily Unique Reach
+
+### Best Ad Formats
+- Traffic Ads (direct clicks to pages)
+- Video Ads with CTAs
+- Carousel Ads with multiple links
+
+### Placements
+- Facebook feed
+- Instagram feed
+- Audience Network
+- Messenger inbox
+
+### Key Metrics
+- Click-Through Rate (CTR)
+- Cost Per Click (CPC)
+- Bounce Rate (on landing page)
+
+### Pro Tips
+- Use custom audiences (product purchasers) to create Lookalikes
+- Add UTM tracking to see which clicks convert
+- Quality beats quantity every time
+- Pair with highly engaging creatives (teasers, cliffhangers)
+
+---
+
+## 3. ENGAGEMENT (Mid Funnel)
+
+### Goal
+Get people to comment, like, share, or interact with your content.
+
+### When to Use
+- Building community and brand affinity
+- Boosting organic visibility
+- Driving video views
+- Starting conversations via Messenger/WhatsApp
+- Event responses or newsletter sign-ups
+
+### Optimizations Available
+- Post Engagement
+- Video Views
+- Event Responses
+- Messages (Messenger, Instagram Direct, WhatsApp)
+- Landing Page Views
+- Link Clicks
+- Impressions
+
+### Conversion Locations
+- Your Ad
+- Messaging Apps
+- Website
+- App
+- Facebook Page
+
+### Placements
+- Facebook feed
+- Instagram feed
+- Audience Network
+- Messenger inbox or Instagram Direct
+
+### Key Metrics
+- Engagement Rate
+- Comments
+- Shares
+- Video Watch Time
+- Message Response Rate
+
+### Pro Tips
+- Ask questions, use polls, encourage UGC
+- Meta favors active interactions (comments, shares) over passive likes
+- Give users a reason to interact
+- DM interactions now included (Messenger, WhatsApp, Instagram)
+
+---
+
+## 4. LEADS (Mid/Bottom Funnel)
+
+### Goal
+Capture potential customers and grow your contact list.
+
+### When to Use
+- Collecting sign-ups
+- Booking appointments
+- Generating inquiries
+- High-intent users entering your sales funnel
+
+### Conversion Locations
+- Your Website
+- Instant Forms (Facebook/Instagram)
+- Messenger
+- Calls
+- Your App
+
+### Best Ad Formats
+- Lead Ads (pre-filled forms)
+- Instant Forms
+- Click-to-Call Ads
+- Messenger Ads
+
+### Placements
+- Facebook feed
+- Instagram feed
+- Audience Network
+- Messenger inbox
+
+### Key Metrics
+- Cost Per Lead (CPL)
+- Lead Quality Score
+- Form Completion Rate
+- Lead Response Time
+
+### Pro Tips
+- Keep form fields minimal (reduce friction)
+- Respond to leads promptly
+- Use CRM or automation for follow-up
+- Great for small businesses without complex funnels
+
+---
+
+## 5. APP PROMOTION (Mobile Apps)
+
+### Goal
+Drive installs and engagement on your mobile app.
+
+### When to Use
+- Launching a new app
+- Driving in-app actions (purchases, sign-ups)
+- Targeting Meta Quest users (VR)
+- Testing Threads placements
+
+### Optimizations Available
+- App Installs
+- App Events
+- Value (maximizes ROAS)
+
+### New Features (2025)
+- **Meta Quest Targeting**: Reach VR headset owners
+- **Threads Placements**: AI-driven ad placements on Threads
+- **In-App Action Optimization**: Track and optimize for purchases, sign-ups
+- **iOS 14+ Adjustments**: SKAdNetwork tracking required
+
+### Placements
+- Facebook feed
+- Instagram feed
+- Audience Network
+- Messenger inbox
+
+### Key Metrics
+- Cost Per Install (CPI)
+- In-App Purchase Rate
+- ROAS
+- Retention Rate
+
+### Pro Tips
+- Focus on in-app events (purchases, sign-ups), not just installs
+- Use Meta Audience Network for broader reach
+- **Video Ads**: Show app UX in action
+- **Playable Ads**: Let users demo without installing (2-3X boost)
+- **Social Proof**: "5M+ downloads" or "Editor's Choice"
+- **Lookalikes of Paying Users**: 2X higher ROI
+- **Exclude Existing Users**: Use app activity exclusion
+- **Stack Interests**: Gaming app? "mobile gamers" + "in-app purchases"
+- **App Events**: Optimize for high-value users after 50+ installs
+
+---
+
+## 6. SALES (Bottom of Funnel)
+
+### Goal
+Drive direct purchases, bookings, or conversions.
+
+### When to Use
+- E-commerce sales
+- Service bookings
+- Demo sign-ups
+- Retargeting high-intent users
+
+### Campaign Types
+- **Conversions**: Optimize for sign-ups, purchases, bookings
+- **Catalog Sales**: Dynamic product ads to past visitors
+- **Store Traffic**: Drive footfall to physical locations
+
+### Best Ad Formats
+- Retargeting Ads
+- Catalog Ads (dynamic product recommendations)
+- Event Ads
+- Lead Form Ads
+
+### Key Metrics
+- Conversion Rate
+- Cost Per Acquisition (CPA)
+- Return on Ad Spend (ROAS)
+- Cart Abandonment Rate
+
+### Pro Tips
+- Let Meta's algorithm optimize (less tweaking = better learning)
+- Meta finds buyers, not just browsers
+- Use for revenue-focused campaigns
+- Retarget users who visited pricing pages but didn't convert
+
+---
+
+## Funnel Alignment Summary
+
+| Funnel Stage | Objective | Best Formats | Key Metrics |
+|--------------|-----------|--------------|-------------|
+| **Top (ToFu)** | Awareness | Video, Carousel, Stories | Impressions, Reach, Ad Recall |
+| **Mid (MoFu)** | Traffic, Engagement, Leads | Lead Ads, Messenger, Video | CTR, CPL, Engagement Rate |
+| **Bottom (BoFu)** | Sales | Retargeting, Catalog Ads | CPA, ROAS, Conversion Rate |
+
+---
+
+## Common Mistakes
+
+1. **Wrong Objective = Wasted Budget**
+   - Traffic objective when you want sales = algorithm finds clickers, not buyers
+   
+2. **Pixel Too New for Conversions**
+   - Start with Traffic, build data, then switch to Conversions
+   
+3. **Over-Tweaking**
+   - Less manual adjustment = better algorithm learning
+   
+4. **Generic Targeting**
+   - ODAX penalizes generic objectives by deprioritizing high-value users
+
+---
+
+## Quick Decision Framework
+
+**What's your goal?**
+- "I want people to know my brand" → **Awareness**
+- "I want website visits" → **Traffic**
+- "I want likes, comments, shares" → **Engagement**
+- "I want contact info" → **Leads**
+- "I want app installs" → **App Promotion**
+- "I want sales/purchases" → **Sales**
+
+---
+
+*Sources: Factors.ai, MagicBrief.com, Bir.ch - 2025-2026*

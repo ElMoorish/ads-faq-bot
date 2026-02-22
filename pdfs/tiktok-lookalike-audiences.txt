@@ -1,0 +1,76 @@
+# About Lookalike Audiences | TikTok Ads Manager
+## Official Documentation
+
+---
+
+Lookalike audiences can help you reach audiences that share commonalities with your existing customers, and deliver your ads to audiences who are interested in your product.
+
+---
+
+## How It Works
+
+The model uses algorithms to:
+1. Study the attributes of your custom audience
+2. Look for users who are similar
+3. Target users with potential to improve performance
+
+---
+
+## Audience Size Options
+
+| Size | Similarity | Reach | Best For |
+|------|------------|-------|----------|
+| **Narrow** | Highest | Smallest | Precise targeting, high intent |
+| **Balanced** | Moderate | Moderate | Balanced approach |
+| **Broad** | Lower | Largest | Scale, awareness |
+
+### Narrow Lookalike
+- ✅ Highest similarity to source audience
+- ❌ Smaller audience size
+- **Best for:** High-intent campaigns, precise targeting
+
+### Balanced Lookalike
+- ✅ Moderate similarity
+- ✅ Moderate reach
+- **Best for:** Balanced performance
+
+### Broad Lookalike
+- ✅ Largest reach
+- ❌ Lower similarity
+- **Best for:** Scale, awareness campaigns
+
+---
+
+## Requirements
+
+### Minimum Source Audience
+- **Minimum:** 1,000 people in source audience
+
+### Audience Size Factors
+The size of the lookalike audience is based on:
+- User base of the market specified
+- Scale selected (Narrow/Balanced/Broad)
+
+---
+
+## Best Practices
+
+1. **Start with Narrow** if you want highest similarity
+2. **Test multiple sizes** to find what works
+3. **Use high-quality source audience** (purchasers work best)
+4. **Combine with other targeting** for better results
+5. **Refresh periodically** as source audience changes
+
+---
+
+## Source Audience Options
+
+Create lookalikes from:
+- Customer lists
+- Website visitors (pixel data)
+- App users
+- Engaged users (video views, profile visits)
+
+---
+
+*Source: https://ads.tiktok.com/help/article/lookalike-audience?lang=en*

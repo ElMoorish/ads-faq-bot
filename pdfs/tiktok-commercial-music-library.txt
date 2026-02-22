@@ -1,0 +1,76 @@
+# About the Commercial Music Library
+## TikTok Ads Official Documentation
+
+---
+
+The TikTok Commercial Music Library (CML) is a **pre-cleared global music library of 1 million songs** that helps make it easier for businesses to find music to soundtrack their content on TikTok.
+
+---
+
+## What's Included
+
+- **1 million songs**
+- All styles and genres
+- All regions
+- Sourced from:
+  - Independent artists
+  - Emerging artists
+  - Top-tier music houses
+
+**Cost:** FREE for businesses to use
+
+---
+
+## Important: Business vs Personal Music
+
+### ❌ Businesses CANNOT Use
+- General TikTok music library
+- For commercial usage
+
+### ✅ Businesses SHOULD Use
+- Commercial Music Library (CML)
+- For ALL commercial TikTok activities
+
+---
+
+## Approved Commercial Uses
+
+| Use Case | Allowed |
+|----------|---------|
+| **Organic content** | ✅ Yes |
+| Duet with user videos | ✅ Yes |
+| React to user videos | ✅ Yes |
+| Stitch with user videos | ✅ Yes |
+| **Video ads** | ✅ Yes |
+| **Branded content** | ✅ Yes |
+
+---
+
+## Legal Warning
+
+If you choose to use:
+- Original sound from other users
+- Other licensed sounds
+
+**You must:** Consult your legal team to ensure you have obtained a proper license.
+
+---
+
+## Quick Reference
+
+```
+Business Account → Use CML Only = Safe & Legal
+Business Account → Use General Music = Risk of Copyright Issues
+```
+
+---
+
+## Access
+
+- Available in TikTok Ads Manager
+- Available in TikTok Business Suite
+- Search by genre, mood, tempo, etc.
+
+---
+
+*Source: https://ads.tiktok.com/help/article/commercial-music-library?lang=en*

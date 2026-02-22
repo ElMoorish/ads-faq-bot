@@ -1,0 +1,107 @@
+{
+  "source": "TikTok Ads Help Center",
+  "scrapedAt": "2026-02-22",
+  "totalArticles": 200,
+  "categories": {
+    "getting_started": [
+      {"title": "The TikTok marketing platform", "url": "https://ads.tiktok.com/help/article/full-funnel-marketing-tiktok?lang=en"},
+      {"title": "Advertising on TikTok Ads Manager", "url": "https://ads.tiktok.com/help/article/tiktok-ads-manager-intro?lang=en"},
+      {"title": "Create a TikTok ad account", "url": "https://ads.tiktok.com/help/article/create-tiktok-ads-manager-account?lang=en"},
+      {"title": "TikTok Business Account", "url": "https://ads.tiktok.com/help/article/tiktok-business-account?lang=en"},
+      {"title": "Business Verification", "url": "https://ads.tiktok.com/help/article/about-business-verification?lang=en"},
+      {"title": "Business Center overview", "url": "https://ads.tiktok.com/help/article/tiktok-business-center?lang=en"},
+      {"title": "Access and Permissions", "url": "https://ads.tiktok.com/help/article/about-business-center-roles-and-permissions?lang=en"}
+    ],
+    "ad_creation": [
+      {"title": "Ad campaign structure", "url": "https://ads.tiktok.com/help/article/tiktok-ads-structure?lang=en"},
+      {"title": "How to create a campaign", "url": "https://ads.tiktok.com/help/article/campaign-set-up?lang=en"},
+      {"title": "Budget and scheduling", "url": "https://ads.tiktok.com/help/article/budget?lang=en"},
+      {"title": "Split Testing", "url": "https://ads.tiktok.com/help/article/split-testing?lang=en"},
+      {"title": "How to create an ad group", "url": "https://ads.tiktok.com/help/article/create-ad-group?lang=en"},
+      {"title": "Placements overview", "url": "https://ads.tiktok.com/help/article/tiktok-placement?lang=en"},
+      {"title": "Ad Targeting", "url": "https://ads.tiktok.com/help/article/ad-targeting?lang=en"},
+      {"title": "Audiences", "url": "https://ads.tiktok.com/help/article/audiences?lang=en"},
+      {"title": "Bidding and optimization", "url": "https://ads.tiktok.com/help/article/bidding-methods?lang=en"},
+      {"title": "How to create an ad", "url": "https://ads.tiktok.com/help/article/ad-set-up?lang=en"}
+    ],
+    "targeting_best_practices": [
+      {"title": "Best practices for Targeting", "url": "https://ads.tiktok.com/help/article/best-practices-for-targeting?lang=en"},
+      {"title": "Lookalike Audience", "url": "https://ads.tiktok.com/help/article/best-practices-for-a-lookalike-audience"}
+    ],
+    "bidding_optimization": [
+      {"title": "Budget best practices", "url": "https://ads.tiktok.com/help/article/budget-best-practices"},
+      {"title": "Bidding strategies best practices", "url": "https://ads.tiktok.com/help/article/best-practices-for-bidding-strategies"},
+      {"title": "Split Test best practices", "url": "https://ads.tiktok.com/help/article/split-test-best-practices"},
+      {"title": "Auction Ads best practices", "url": "https://ads.tiktok.com/help/article/auction-ads-best-practices"},
+      {"title": "Max delivery optimization", "url": "https://ads.tiktok.com/help/article/best-practices-for-max-delivery-optimization"}
+    ],
+    "creative": [
+      {"title": "Creative best practices", "url": "https://ads.tiktok.com/help/article/creative-best-practices?lang=en"},
+      {"title": "Creatives for performance ads", "url": "https://ads.tiktok.com/help/article/creative-best-practices"},
+      {"title": "TikTok Video Editor", "url": "https://ads.tiktok.com/help/article/about-tiktok-video-editor?lang=en"},
+      {"title": "Generate with AI", "url": "https://ads.tiktok.com/help/article/about-generate-with-ai-in-tiktok-ads-manager?lang=en"},
+      {"title": "Symphony Creative Studio", "url": "https://ads.tiktok.com/help/article/about-symphony-creative-studio?lang=en"},
+      {"title": "Commercial Music Library", "url": "https://ads.tiktok.com/help/article/commercial-music-library?lang=en"}
+    ],
+    "smart_plus": [
+      {"title": "Smart+ Campaigns", "url": "https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en"},
+      {"title": "Smart+ Web Campaigns", "url": "https://ads.tiktok.com/help/article/best-practices-for-smart-plus-web-campaigns"},
+      {"title": "Smart+ App Campaigns", "url": "https://ads.tiktok.com/help/article/best-practices-for-smart-plus-app-campaigns"},
+      {"title": "Smart+ Lead Campaigns", "url": "https://ads.tiktok.com/help/article/best-practices-for-smart-lead-generation-campaigns"}
+    ],
+    "measurement": [
+      {"title": "TikTok Pixel", "url": "https://ads.tiktok.com/help/article/tiktok-pixel?lang=en"},
+      {"title": "Events Manager", "url": "https://ads.tiktok.com/help/article/about-tiktok-events-manager?lang=en"},
+      {"title": "Web Data Connections", "url": "https://ads.tiktok.com/help/article/web-attribution?lang=en"},
+      {"title": "Web Events & Parameters", "url": "https://ads.tiktok.com/help/article/standard-events-parameters?lang=en"},
+      {"title": "Best practices for Measurement", "url": "https://ads.tiktok.com/help/article/best-practices-for-measurement?lang=en"},
+      {"title": "Best practices for Web Data Connections", "url": "https://ads.tiktok.com/help/article/best-practices-for-web-data-connections"},
+      {"title": "Advanced Matching for Web", "url": "https://ads.tiktok.com/help/article/best-practices-for-advanced-matching-for-web"},
+      {"title": "Reports", "url": "https://ads.tiktok.com/help/article/view-data?lang=en"},
+      {"title": "Audience Insights", "url": "https://ads.tiktok.com/help/article/audience-insights?lang=en"},
+      {"title": "Video Insights", "url": "https://ads.tiktok.com/help/article/video-insights?lang=en"},
+      {"title": "Metrics glossary", "url": "https://ads.tiktok.com/help/article/all-metrics?lang=en"}
+    ],
+    "app_promotion": [
+      {"title": "App promotion objective", "url": "https://ads.tiktok.com/help/article/app-installs-objective?lang=en"},
+      {"title": "App Event Optimization", "url": "https://ads.tiktok.com/help/article/app-event-optimization?lang=en"},
+      {"title": "App VBO", "url": "https://ads.tiktok.com/help/article/value-based-optimization-app?lang=en"},
+      {"title": "iOS 14.5+ Guidance", "url": "https://ads.tiktok.com/help/article/account-objective-considerations-ios14?lang=en"},
+      {"title": "App Retargeting", "url": "https://ads.tiktok.com/help/article/app-retargeting?lang=en"},
+      {"title": "Self-Attribution Network (SAN)", "url": "https://ads.tiktok.com/help/article/about-self-attribution-transition?lang=en"},
+      {"title": "SKAN 4.0", "url": "https://ads.tiktok.com/help/article/about-skan-4-0-and-tiktok?lang=en"}
+    ],
+    "lead_generation": [
+      {"title": "Lead generation campaigns", "url": "https://ads.tiktok.com/help/article/lead-generation-objective?lang=en"},
+      {"title": "Instant Forms", "url": "https://ads.tiktok.com/help/article/set-up-lead-generation-with-instant-form?lang=en"},
+      {"title": "Leads Center", "url": "https://ads.tiktok.com/help/article/tiktok-leads-center?lang=en"},
+      {"title": "CRM integration", "url": "https://ads.tiktok.com/help/article/available-crm-integrations-tiktok-lead-generation?lang=en"},
+      {"title": "Lead quality optimization", "url": "https://ads.tiktok.com/help/article/about-lead-quality-optimization?lang=en"}
+    ],
+    "ecommerce": [
+      {"title": "Sales objective", "url": "https://ads.tiktok.com/help/article/sales-advertising-objective-tiktok?lang=en"},
+      {"title": "Catalog setup", "url": "https://ads.tiktok.com/help/article/catalogs?lang=en"},
+      {"title": "Catalog Ads", "url": "https://ads.tiktok.com/help/article/about-catalog-ads-in-tiktok-ads-manager?lang=en"},
+      {"title": "TikTok Shop Ads", "url": "https://ads.tiktok.com/help/article/set-up-tiktok-shopping?lang=en"},
+      {"title": "Video Shopping Ads", "url": "https://ads.tiktok.com/help/article/getting-started-video-shopping-ads?lang=en"},
+      {"title": "LIVE Shopping Ads", "url": "https://ads.tiktok.com/help/article/how-to-create-live-shopping-ads?lang=en"},
+      {"title": "Product Shopping Ads", "url": "https://ads.tiktok.com/help/article/advertise-using-product-images-from-tiktok-shop?lang=en"},
+      {"title": "GMV Max", "url": "https://ads.tiktok.com/help/article/about-gmv-max-campaigns-in-tiktok-ads-manager?lang=en"},
+      {"title": "Web VBO", "url": "https://ads.tiktok.com/help/article/value-based-optimization-web?lang=en"}
+    ],
+    "ad_formats": [
+      {"title": "TopView", "url": "https://ads.tiktok.com/help/article/about-topview?lang=en"},
+      {"title": "Spark Ads", "url": "https://ads.tiktok.com/help/article/spark-ads?lang=en"},
+      {"title": "TikTok Pulse suite", "url": "https://ads.tiktok.com/help/article/tiktok-pulse?lang=en"},
+      {"title": "Carousel ads", "url": "https://ads.tiktok.com/help/article/carousel-ads?lang=en"},
+      {"title": "Playable ads", "url": "https://ads.tiktok.com/help/article/playable-ads?lang=en"},
+      {"title": "Search Ads Campaign", "url": "https://ads.tiktok.com/help/article/about-search-ads-campaign?lang=en"},
+      {"title": "Messaging Ads", "url": "https://ads.tiktok.com/help/article/about-tiktok-messaging-ads?lang=en"}
+    ],
+    "policies": [
+      {"title": "Advertising policies", "url": "https://ads.tiktok.com/help/article/tiktok-advertising-policies?lang=en"},
+      {"title": "Ad reviews and status", "url": "https://ads.tiktok.com/help/article/ad-review-checklist?lang=en"},
+      {"title": "Brand safety", "url": "https://ads.tiktok.com/help/article/about-brand-safety-hub?lang=en"}
+    ]
+  }
+}
