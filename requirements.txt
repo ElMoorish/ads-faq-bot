@@ -20,3 +20,6 @@ sentence-transformers>=2.2.0
 
 # Vector Store (local ChromaDB - simpler)
 chromadb>=0.4.0
+
+# For Groq Vision API
+openai>=1.0.0
