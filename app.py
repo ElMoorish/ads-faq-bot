@@ -73,11 +73,11 @@ class SupabaseHTTP:
     
     def list_files(self, bucket: str):
         try:
-            # Use the list endpoint with POST
+            # Use the list endpoint with POST - requires prefix property
             resp = httpx.post(
                 f"{self.storage_url}/storage/v1/object/list/{bucket}",
                 headers={**self.headers, "Content-Type": "application/json"},
-                json={}
+                json={"prefix": ""}  # Empty prefix = list all files
             )
             if resp.status_code != 200:
                 st.warning(f"Storage list API returned {resp.status_code}: {resp.text[:300]}")
