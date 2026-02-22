@@ -138,8 +138,12 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     
     # Check if documents exist in Supabase
     with st.spinner("Checking knowledge base..."):
-        result = client.table("documents").select("id", count="exact").limit(1).execute()
-        doc_count = result.count if hasattr(result, 'count') else 0
+        try:
+            result = client.table("documents").select("id").limit(1).execute()
+            doc_count = len(result.data) if result.data else 0
+        except Exception as e:
+            st.warning(f"Could not check documents: {e}")
+            doc_count = 0
     
     if doc_count == 0:
         st.warning("⚠️ No documents in database. Loading from PDFs...")
