@@ -293,6 +293,16 @@ if groq_key and supabase_url and supabase_key:
                     
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
+    
+    # Footer
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 20px; color: #6B7280; font-size: 14px;">
+        Built with 🍋 by <a href="https://github.com/ElMoorish" target="_blank" style="color: #3B82F6; text-decoration: none; font-weight: 600;">ElMoorish</a>
+        <br/>
+        <a href="https://github.com/ElMoorish/ads-faq-bot" target="_blank" style="color: #6B7280; text-decoration: none;">⭐ Star on GitHub</a>
+    </div>
+    """, unsafe_allow_html=True)
 
 else:
     st.error("⚠️ Missing credentials! Add to Streamlit secrets:")
