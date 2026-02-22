@@ -67,15 +67,28 @@ class SupabaseHTTP:
     
     def list_files(self, bucket: str):
         try:
+            # Try the REST API first
             resp = httpx.post(
                 f"{self.url}/storage/v1/object/list/{bucket}",
                 headers={**self.headers, "Content-Type": "application/json"},
                 json={}
             )
             if resp.status_code != 200:
-                st.warning(f"Storage API returned {resp.status_code}: {resp.text}")
+                # Try alternative endpoint
+                resp = httpx.get(
+                    f"{self.url}/storage/v1/bucket/{bucket}/objects",
+                    headers=self.headers
+                )
+            if resp.status_code != 200:
+                st.warning(f"Storage API returned {resp.status_code}: {resp.text[:500]}")
                 return []
-            return resp.json()
+            data = resp.json()
+            # Handle different response formats
+            if isinstance(data, list):
+                return data
+            if isinstance(data, dict) and 'data' in data:
+                return data['data']
+            return []
         except Exception as e:
             st.warning(f"Error listing files: {e}")
             return []
@@ -247,6 +260,9 @@ Answer:
 # Chat interface
 if groq_key and supabase_url and supabase_key:
     if not st.session_state.initialized:
+        # Quick test of Supabase connection
+        st.info(f"Testing connection to: {supabase_url}")
+        
         with st.spinner("Initializing Ads Mastery AI..."):
             st.session_state.chain, st.session_state.retriever = initialize_system(
                 groq_key, supabase_url, supabase_key
