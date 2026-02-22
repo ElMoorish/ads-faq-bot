@@ -64,30 +64,27 @@ class SupabaseHTTP:
             "apikey": key,
             "Authorization": f"Bearer {key}"
         }
+        # Storage might be on a different subdomain
+        # Try both: project.supabase.co and project.storage.supabase.co
+        if ".storage.supabase" not in url:
+            self.storage_url = url.replace(".supabase.co", ".storage.supabase.co")
+        else:
+            self.storage_url = url
     
     def list_files(self, bucket: str):
         try:
-            # Try the REST API first
+            # Use the list endpoint with POST
             resp = httpx.post(
-                f"{self.url}/storage/v1/object/list/{bucket}",
+                f"{self.storage_url}/storage/v1/object/list/{bucket}",
                 headers={**self.headers, "Content-Type": "application/json"},
                 json={}
             )
             if resp.status_code != 200:
-                # Try alternative endpoint
-                resp = httpx.get(
-                    f"{self.url}/storage/v1/bucket/{bucket}/objects",
-                    headers=self.headers
-                )
-            if resp.status_code != 200:
-                st.warning(f"Storage API returned {resp.status_code}: {resp.text[:500]}")
+                st.warning(f"Storage list API returned {resp.status_code}: {resp.text[:300]}")
                 return []
             data = resp.json()
-            # Handle different response formats
             if isinstance(data, list):
                 return data
-            if isinstance(data, dict) and 'data' in data:
-                return data['data']
             return []
         except Exception as e:
             st.warning(f"Error listing files: {e}")
@@ -95,7 +92,7 @@ class SupabaseHTTP:
     
     def download_file(self, bucket: str, path: str):
         resp = httpx.get(
-            f"{self.url}/storage/v1/object/{bucket}/{path}",
+            f"{self.storage_url}/storage/v1/object/{bucket}/{path}",
             headers=self.headers
         )
         return resp.content if resp.status_code == 200 else None
@@ -160,10 +157,6 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     with st.spinner("Loading documents from storage..."):
         try:
             files = sb_http.list_files("pdfs")
-            st.write(f"Debug: Found {len(files)} files in bucket")
-            if files:
-                st.write(f"Debug: Files = {files}")
-            
             documents = []
             
             for file in files:
@@ -260,9 +253,6 @@ Answer:
 # Chat interface
 if groq_key and supabase_url and supabase_key:
     if not st.session_state.initialized:
-        # Quick test of Supabase connection
-        st.info(f"Testing connection to: {supabase_url}")
-        
         with st.spinner("Initializing Ads Mastery AI..."):
             st.session_state.chain, st.session_state.retriever = initialize_system(
                 groq_key, supabase_url, supabase_key
