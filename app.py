@@ -1,4 +1,4 @@
-# FAQ Chatbot - Production (Supabase)
+# FAQ Chatbot - Production (Supabase via HTTP)
 # Uses: Groq (free LLM), HuggingFace (free embeddings), Supabase pgvector
 
 import os
@@ -17,7 +17,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from pathlib import Path
 import tempfile
-import supabase
+import httpx
+import json
 
 # Page config
 st.set_page_config(
@@ -62,6 +63,47 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+
+# Helper class for Supabase via HTTP
+class SupabaseClient:
+    def __init__(self, url: str, key: str):
+        self.url = url.rstrip("/")
+        self.key = key
+        self.headers = {
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json"
+        }
+    
+    def list_files(self, bucket: str):
+        """List files in storage bucket"""
+        resp = httpx.post(
+            f"{self.url}/storage/v1/object/list/{bucket}",
+            headers=self.headers,
+            json={}
+        )
+        resp.raise_for_status()
+        return resp.json()
+    
+    def download_file(self, bucket: str, path: str):
+        """Download file from storage"""
+        resp = httpx.get(
+            f"{self.url}/storage/v1/object/{bucket}/{path}",
+            headers={k: v for k, v in self.headers.items() if k != "Content-Type"}
+        )
+        resp.raise_for_status()
+        return resp.content
+    
+    def check_documents(self):
+        """Check if documents table has data"""
+        resp = httpx.get(
+            f"{self.url}/rest/v1/documents?select=id&limit=1",
+            headers={**self.headers, "Prefer": "count=exact"}
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            return len(data) if data else 0
+        return 0
 
 # Sidebar
 with st.sidebar:
@@ -126,9 +168,9 @@ def format_docs(docs):
 def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     """Initialize Supabase connection, embeddings, and QA chain"""
     
-    # Connect to Supabase
+    # Connect to Supabase via HTTP
     with st.spinner("Connecting to database..."):
-        client = supabase.create_client(supabase_url, supabase_key)
+        client = SupabaseClient(supabase_url, supabase_key)
     
     # Free embeddings from HuggingFace
     with st.spinner("Loading AI models..."):
@@ -139,11 +181,14 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
     # Check if documents exist in Supabase
     with st.spinner("Checking knowledge base..."):
         try:
-            result = client.table("documents").select("id").limit(1).execute()
-            doc_count = len(result.data) if result.data else 0
+            doc_count = client.check_documents()
         except Exception as e:
             st.warning(f"Could not check documents: {e}")
             doc_count = 0
+    
+    # Import supabase only for vectorstore (it handles this internally)
+    import supabase as sb
+    sb_client = sb.create_client(supabase_url, supabase_key)
     
     if doc_count == 0:
         st.warning("⚠️ No documents in database. Loading from PDFs...")
@@ -152,28 +197,29 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
         with st.spinner("Loading documents from storage..."):
             try:
                 # List files in pdfs bucket
-                files = client.storage.from_("pdfs").list()
+                files = client.list_files("pdfs")
                 documents = []
                 
                 for file in files:
-                    if file['name'].endswith(('.pdf', '.txt')):
+                    filename = file.get("name", "")
+                    if filename.endswith(('.pdf', '.txt')):
                         # Download file
-                        data = client.storage.from_("pdfs").download(file['name'])
+                        data = client.download_file("pdfs", filename)
                         
                         # Save to temp file for loading
-                        with tempfile.NamedTemporaryFile(delete=False, suffix=Path(file['name']).suffix) as tmp:
+                        with tempfile.NamedTemporaryFile(delete=False, suffix=Path(filename).suffix) as tmp:
                             tmp.write(data)
                             tmp_path = tmp.name
                         
                         # Load document
-                        if file['name'].endswith('.pdf'):
+                        if filename.endswith('.pdf'):
                             loader = PyPDFLoader(tmp_path)
                         else:
                             loader = TextLoader(tmp_path)
                         
                         docs = loader.load()
                         for doc in docs:
-                            doc.metadata['source'] = file['name']
+                            doc.metadata['source'] = filename
                         documents.extend(docs)
                         
                         os.unlink(tmp_path)
@@ -192,7 +238,7 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
                     vectorstore = SupabaseVectorStore.from_documents(
                         documents=splits,
                         embedding=embeddings,
-                        client=client,
+                        client=sb_client,
                         table_name="documents",
                         query_name="search_documents"
                     )
@@ -201,11 +247,12 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
                 
             except Exception as e:
                 st.error(f"Error loading documents: {str(e)}")
+                st.code(str(e))
                 return None, None
     else:
         st.info(f"📚 Knowledge base ready ({doc_count} chunks)")
         vectorstore = SupabaseVectorStore(
-            client=client,
+            client=sb_client,
             embedding=embeddings,
             table_name="documents",
             query_name="search_documents"
@@ -328,6 +375,7 @@ if groq_key and supabase_url and supabase_key:
                         
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
+                        st.code(str(e))
                         st.info("💡 Try refreshing the page if the error persists.")
 
 else:
