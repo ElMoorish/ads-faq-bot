@@ -12,12 +12,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import SupabaseVectorStore
 from langchain_groq import ChatGroq
-from langchain.chains import RetrievalQA
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
 from pathlib import Path
 import tempfile
 import supabase
-from io import BytesIO
 
 # Page config
 st.set_page_config(
@@ -111,10 +111,16 @@ st.markdown("Ask questions about Meta & TikTok ads based on our expert guides")
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
-if "qa_chain" not in st.session_state:
-    st.session_state.qa_chain = None
+if "chain" not in st.session_state:
+    st.session_state.chain = None
+if "retriever" not in st.session_state:
+    st.session_state.retriever = None
 if "initialized" not in st.session_state:
     st.session_state.initialized = False
+
+# Format documents for context
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
 
 # Initialize the system
 def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
@@ -191,7 +197,7 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
                 
             except Exception as e:
                 st.error(f"Error loading documents: {str(e)}")
-                return None
+                return None, None
     else:
         st.info(f"📚 Knowledge base ready ({doc_count} chunks)")
         vectorstore = SupabaseVectorStore(
@@ -209,8 +215,11 @@ def initialize_system(groq_key: str, supabase_url: str, supabase_key: str):
             temperature=0.7
         )
     
-    # Custom prompt
-    prompt_template = """
+    # Create retriever
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    
+    # Create modern chain with LCEL
+    prompt = ChatPromptTemplate.from_template("""
 You are an expert ads consultant helping users master Meta (Facebook/Instagram) and TikTok advertising. 
 
 Answer questions based ONLY on the provided context from our ad mastery guides. Be helpful, specific, and actionable.
@@ -229,39 +238,32 @@ Instructions:
 - End with a relevant follow-up question or tip
 
 Answer:
-"""
+""")
     
-    prompt = PromptTemplate(
-        template=prompt_template,
-        input_variables=["context", "question"]
+    chain = (
+        {"context": retriever | format_docs, "question": RunnablePassthrough()}
+        | prompt
+        | llm
+        | StrOutputParser()
     )
     
-    # Create QA chain
-    qa_chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=vectorstore.as_retriever(search_kwargs={"k": 4}),
-        return_source_documents=True,
-        chain_type_kwargs={"prompt": prompt}
-    )
-    
-    return qa_chain
+    return chain, retriever
 
 # Chat interface
 if groq_key and supabase_url and supabase_key:
     # Initialize on first run
     if not st.session_state.initialized:
         with st.spinner("Initializing Ads Mastery AI..."):
-            st.session_state.qa_chain = initialize_system(groq_key, supabase_url, supabase_key)
+            st.session_state.chain, st.session_state.retriever = initialize_system(groq_key, supabase_url, supabase_key)
         
-        if st.session_state.qa_chain:
+        if st.session_state.chain:
             st.session_state.initialized = True
             st.success("✅ Ready! Ask your ads questions below.")
         else:
             st.error("❌ Failed to initialize. Check your Supabase configuration.")
     
     # Only show chat if initialized
-    if st.session_state.initialized and st.session_state.qa_chain:
+    if st.session_state.initialized and st.session_state.chain:
         # Chat messages
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
@@ -284,14 +286,15 @@ if groq_key and supabase_url and supabase_key:
             with st.chat_message("assistant"):
                 with st.spinner("Thinking..."):
                     try:
-                        result = st.session_state.qa_chain.invoke({"query": prompt})
-                        answer = result["result"]
-                        
-                        # Extract sources
+                        # Get relevant documents for sources
+                        docs = st.session_state.retriever.invoke(prompt)
                         sources = list(set([
-                            doc.metadata.get("source", "Unknown").split("/")[-1]
-                            for doc in result.get("source_documents", [])
+                            doc.metadata.get("source", "Unknown")
+                            for doc in docs
                         ]))
+                        
+                        # Get answer from chain
+                        answer = st.session_state.chain.invoke(prompt)
                         
                         st.markdown(answer)
                         
